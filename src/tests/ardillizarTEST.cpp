@@ -48,3 +48,23 @@ TEST(ardillizarTEST, audioImPar) {
     }
 }
 
+TEST(ardillizarTEST, audioNeg) {
+    int prof = 16;
+    int freq = 4;
+    sala m = {
+            {10343,3242,-2343,2344,5234,246,324},
+            {567,7789,8978,899,232,1234,-4234324}
+    };
+    sala res = {
+            {10343,-2343,5234,324},
+            {567,8978,232,-4234324}
+    };
+
+    sala m_out = ardillizar(m,prof,freq);
+
+    for(int i=0;i<m.size();i++){
+        for(int j=0;j<res[i].size();j++) {
+            EXPECT_EQ(res[i][j],m_out[i][j]);
+        }
+    }
+}
