@@ -160,14 +160,54 @@ void interPolar(audio &resi, audio mi) {
 /************************** EJERCICIO silencios **************************/
 lista_intervalos silencios(audio s, int prof, int freq, int umbral){
     lista_intervalos res;
+
+    const int indicesMinimos = floor(0.1 * freq);
+    for (int x = 0; x < s.size() - indicesMinimos; x++){
+        intervalo silencioActual = {float(x)/freq, -1};
+        for (int y = x; y < s.size(); y++){
+            if (abs(s[y]) < umbral){
+                if (y - x >= indicesMinimos){
+                    // Es y+1 porque el silencio cuenta hasta exactamente el instante en que supera el umbral porque asi lo dice el caso de ejemplo dado
+                    get<1>(silencioActual) = float(y+1)/freq;
+                }
+            }else{
+                break;
+            }
+        }
+        if (get<1>(silencioActual) != -1){
+            res.push_back(silencioActual);
+            x = int(get<1>(silencioActual) * freq);
+        }
+    }
+
     return res;
 }
 
 /************************** EJERCICIO hayQuilombo **************************/
-bool hayQuilombo(sala m, int prof, int freq, int umbral){
+bool estaEnSilencio(audio a, int pos, int prof, int freq, int umbral){
+    lista_intervalos s = silencios(a,prof,freq,umbral);
+    for (int x = 0; x < s.size(); x++){
+        //printf("sil0: %f, sil1: %f, freq: %i, pos: %i\n", get<0>(s[x]), get<1>(s[x]), freq, pos);
+        if (get<0>(s[x]) * freq <= pos && pos < get<1>(s[x]) * freq) { // Si s1 <= pos < s2 donde s1 y s2 son las posiciones correspondientes a los tiempos obtenidos en la funcion anterior
+            return true;
+        }
+    }
     return false;
 }
 
+bool hayQuilombo(sala m, int prof, int freq, int umbral){
+    for (int x = 0; x < m.size()-1; x++){
+        for (int y = x+1; y  < m.size(); y++){
+            for (int z = 0; z < m[x].size(); z++) {
+                if (!(estaEnSilencio(m[x], z, prof, freq, umbral) || estaEnSilencio(m[y], z, prof, freq, umbral))) {
+                    //printf("x: %i, y: %i, z: %i, resx: %i, resy: %i\n", x, y, z, estaEnSilencio(m[x], z, prof, freq, umbral), estaEnSilencio(m[y], z, prof, freq, umbral));
+                    return true;
+                }
+            }
+        }
+    }
+    return false;
+}
 /************************** EJERCICIO sacarPausas **************************/
 audio sacarPausas(audio s, lista_intervalos sil, int freq, int prof, int umbral) {
     audio result;
@@ -176,16 +216,37 @@ audio sacarPausas(audio s, lista_intervalos sil, int freq, int prof, int umbral)
 
 /************************** EJERCICIO encontrarAparicion **************************/
 int encontrarAparicion(audio s , audio target){
+    return calcularMaximaCorrelacion(s,target);
+}
 
-    int i = 0, indiceCoincidencia = -1;
-    while(i <= s.size()-target.size()) {
-        if(esMaximaCorrelacion(s, i, target)) {
-            indiceCoincidencia = i;
-            break;
+int calcularMaximaCorrelacion(audio personai, audio frase) {
+    int i = 0, posMax = i;
+    float temp;
+    float maxCor = correlacion(subseq(personai, i,i+frase.size()+1),frase);
+    while(i < personai.size()-frase.size()) {
+        temp = correlacion(subseq(personai, i,i+frase.size()+1),frase);
+        if(maxCor < temp) {
+            maxCor = temp;
+            posMax = i;
         }
         i++;
     }
-    return indiceCoincidencia;
+    return posMax;
+}
+
+bool esMaximaCorrelacion(audio personai, int startPoint, audio frase){
+    //int j = startPoint+1;
+    int maxCor = calcularMaximaCorrelacion(personai,frase);
+    /*int largo = personai.size(), largo2=frase.size();
+    while(j < largo-largo2){
+        cout << "AHORA j VALE: " << j<<endl;
+        if((correlacion(subseq(personai,j,j+largo2+1), frase) > correlacion(subseq(personai,startPoint,1+startPoint+largo2), frase))) {
+            esMaxima = false;
+            break;
+        }
+        j++;
+    }*/
+    return (correlacion(subseq(personai,maxCor,frase.size()+1+maxCor),frase) == correlacion(subseq(personai,startPoint,startPoint+frase.size()+1), frase));
 }
 
 /************************** EJERCICIO medirLaDistancia **************************/
@@ -193,10 +254,11 @@ locutor medirLaDistancia(sala m, audio frase, int freq, int prof){
     locutor out;
     //busco el locutor que dijo la frase
     int i = 0, posMax = 0;
-    float max = intensidadCorrelacion(m[0], frase);
+    float max = intensidadCorrelacion(m[i], frase);
     while(i < m.size()) {
-        if(max < intensidadCorrelacion(m[i],frase)){
-            max = intensidadCorrelacion(m[i], frase);
+        float intensidad = intensidadCorrelacion(m[i],frase);
+        if(max < intensidad){
+            max = intensidad;
             posMax = i;
         }
         i++;
@@ -207,44 +269,41 @@ locutor medirLaDistancia(sala m, audio frase, int freq, int prof){
 
     return out;
 }
-
 void asignarDistanciasALocutores(locutor &out, audio frase, sala m, int freq) {
     int i = 0;
-    int comienzoCorrelacionLocutor = comienzoCorrelacion(m[get<0>(out)], frase);
+    int comienzoCorrelacionLocutorDijoFrase = comienzoCorrelacion(m[get<0>(out)], frase);
     while(i < m.size()) {
-        get<1>(out)[i] = abs((comienzoCorrelacion(m[i],frase))-(comienzoCorrelacionLocutor)) * VELOCIDAD_SONIDO / freq;
+        get<1>(out).push_back(abs((comienzoCorrelacion(m[i],frase))-(comienzoCorrelacionLocutorDijoFrase)) * VELOCIDAD_SONIDO / freq);
+        i++;
+        cout << "YA ORDENE PERSONA : " << i << " y faltan " << m.size()-i<<endl;
     }
 }
 int comienzoCorrelacion(audio personai, audio frase){
-    int i = 0, acumCorrelacion = 0;
-    while(i <= personai.size()-frase.size()) {
+    /*int i = 0, acumCorrelacion = 0;
+    while(i < personai.size()-frase.size()) {
         if(esMaximaCorrelacion(personai,i,frase)) {
             acumCorrelacion+=i;
-        }
-        i++;
-    }
-}
-bool esMaximaCorrelacion(audio personai, int startPoint, audio frase){
-    int j = 0;
-    bool esMaxima = true;
-    int largo = personai.size(), largo2=frase.size();
-    while(j < personai.size()-frase.size()){
-        if((j != startPoint) && (correlacion(subseq(personai,j,j+frase.size()+1), frase) > correlacion(subseq(personai,startPoint,1+startPoint+frase.size()), frase))) {
-            esMaxima = false;
             break;
         }
-        j++;
-    }
-    return esMaxima;
+        i++;
+    }*/
+    return calcularMaximaCorrelacion(personai, frase);
 }
 float intensidadCorrelacion(audio personai, audio frase) {
-    int i = 0;
+    /*int i = 0;
     float intCor = 0;
-    while(i <= personai.size()-frase.size()) {
+    while(i < personai.size()-frase.size()) {
+        int m = calcularMaximaCorrelacion(personai, frase);
         if(esMaximaCorrelacion(personai,i,frase)) {
             intCor += calcularIntensidadMedia(subseq(personai,i,i+frase.size()));
+            break;
         }
         i++;
-    }
-    return intCor;
+    }*/
+    int p = calcularMaximaCorrelacion(personai, frase);
+    return calcularIntensidadMedia(subseq(personai,p,p+1+frase.size()));
+}
+
+
+audio sinSilencio ( audio vec , int freq , int prof, int umbral) {
 }

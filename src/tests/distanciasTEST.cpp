@@ -8,7 +8,6 @@
 
 using namespace std;
 /*
-
 TEST(distanciasTEST, subaudioLongitud) {
     audio v = {1,2,3,4,5,6};
     audio v2 = subAudio(v,2,2);
@@ -22,7 +21,6 @@ TEST(distanciasTEST, subaudioContenido) {
     for(int k=0;k<sv.size();k++)
         EXPECT_EQ(sv[k],v2[k]);
 }
-
 TEST(distanciasTEST, estadisticos) {
     audio v = {6,2,3,1};
     float media, std;
@@ -47,7 +45,7 @@ TEST(distanciasTEST, lecturaAudio) {
     EXPECT_EQ(duracion, 120);
     EXPECT_EQ(duracion, spk0.size()/frecuencia);
 }
-
+*/
 TEST(distanciasTEST, testBEEP) {
     int frecuencia, profundidad,duracion;
     int startPOINT, endPOINT;
@@ -58,10 +56,10 @@ TEST(distanciasTEST, testBEEP) {
                                      "datos/spkr4.dat"};
 
     audio pzm = leerVectorAudio("datos/pzm.dat",frecuencia,profundidad,duracion);
-    audio frase = subAudio(pzm,POS_SMP_TEST_DISTANCIA,QUANT_SMP_TEST_DISTNACIA);
+    audio frase = subAudio(pzm,POS_SMP_TEST_DISTANCIA,QUANT_SMP_TEST_DISTANCIA);
 
     startPOINT = POS_SMP_TEST_DISTANCIA - 3000;
-    endPOINT = QUANT_SMP_TEST_DISTNACIA + 2 * 3000;
+    endPOINT = QUANT_SMP_TEST_DISTANCIA + 2 * 3000;
     sala m = cargarSalaAudio(lista_archivos,frecuencia,profundidad,duracion,startPOINT,endPOINT);
 
     locutor spk = medirLaDistancia(m,frase,frecuencia,profundidad);
@@ -84,4 +82,4 @@ TEST(distanciasTEST, leerSala) {
     sala m = cargarSalaAudio(lista_archivos,frecuencia,profundidad,duracion,10,1000);
 
     EXPECT_EQ(m[2].size(),1000);
-}*/
+}

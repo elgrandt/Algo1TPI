@@ -31,12 +31,12 @@ TEST(ardillizarTEST, audioImPar) {
     int prof = 16;
     int freq = 4;
     sala m = {
-            {1,2,3,4,5,6,9},
-            {5,7,8,9,2,1,4}
+            {1,1,9,7,3,10,0,4,4,8,8,2,5,4,3,5,6,3,6},
+            {5,7,8,9,2,1,0,3,2,0,3,6,2,8,2,5,7,2,6}
     };
     sala res = {
-            {1,3,5,9},
-            {5,8,2,4}
+            {1,9,3,0,4,8,5,3,6,6},
+            {5,8,2,0,2,3,2,2,7,6}
     };
 
     sala m_out = ardillizar(m,prof,freq);
@@ -47,6 +47,7 @@ TEST(ardillizarTEST, audioImPar) {
         }
     }
 }
+
 
 TEST(ardillizarTEST, audioNeg) {
     int prof = 16;

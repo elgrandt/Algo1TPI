@@ -18,8 +18,8 @@ void agregarLasPares(audio &res, audio mi);
 void interPolar(audio &a, audio a0);
 int prom(int a, int b);
 float intensidadCorrelacion(audio a, audio frase);
-bool esMaximaCorrelacion(audio a, int i, audio frase);
 int comienzoCorrelacion(audio a, audio frase);
 void asignarDistanciasALocutores(locutor &out, audio frase, sala m,int freq);
-bool esMaximaCorrelacion(audio a, int starPoint, audio frase);
+bool esMaximaCorrelacion(audio a, int startPoint, audio frase);//no la estoy usando
+int calcularMaximaCorrelacion(audio personai, audio frase);
 #endif //SALADEREUNION_FUNCIONESAUXILIARES_H
