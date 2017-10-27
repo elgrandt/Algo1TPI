@@ -57,7 +57,7 @@ audio leerVectorAudio(string nombreArchivo, int& frecuencia, int& profundidad, i
             cout << "Archivo vacio." << endl;
     }
     else
-        cout << "Error leyendo el archivo." << endl;
+        cout << "Error leyendo el archivo." << nombreArchivo.c_str() <<endl;
 
     miArchivo.close();
     return vec;
