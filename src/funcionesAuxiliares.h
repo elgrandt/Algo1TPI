@@ -22,4 +22,5 @@ int comienzoCorrelacion(audio a, audio frase);
 void asignarDistanciasALocutores(locutor &out, audio frase, sala m,int freq);
 bool esMaximaCorrelacion(audio a, int startPoint, audio frase);//no la estoy usando
 int calcularMaximaCorrelacion(audio personai, audio frase);
+bool indicePerteneceASilencio(int indice, vector<intervalo> listaDeSilencios, int freq);
 #endif //SALADEREUNION_FUNCIONESAUXILIARES_H

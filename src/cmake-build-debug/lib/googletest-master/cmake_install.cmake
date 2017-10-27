@@ -1,4 +1,4 @@
-# Install script for directory: C:/Proyectos/Algo1TPI/src/lib/googletest-master
+# Install script for directory: E:/Proyectos/TPDeImplementacionV2.0/Algo1TPI/src/lib/googletest-master
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -29,7 +29,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Proyectos/Algo1TPI/src/cmake-build-debug/lib/googletest-master/googlemock/cmake_install.cmake")
+  include("E:/Proyectos/TPDeImplementacionV2.0/Algo1TPI/src/cmake-build-debug/lib/googletest-master/googlemock/cmake_install.cmake")
 
 endif()
 

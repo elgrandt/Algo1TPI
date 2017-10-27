@@ -33,19 +33,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2017.2.3\bin\cmake\bin\cmake.exe"
+CMAKE_COMMAND = "D:\JetBrains\CLion 2017.2.3\bin\cmake\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2017.2.3\bin\cmake\bin\cmake.exe" -E remove -f
+RM = "D:\JetBrains\CLion 2017.2.3\bin\cmake\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Proyectos\Algo1TPI\src
+CMAKE_SOURCE_DIR = E:\Proyectos\TPDeImplementacionV2.0\Algo1TPI\src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Proyectos\Algo1TPI\src\cmake-build-debug
+CMAKE_BINARY_DIR = E:\Proyectos\TPDeImplementacionV2.0\Algo1TPI\src\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/salaDeReunion.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/salaDeReunion.dir/flags.make
 CMakeFiles/salaDeReunion.dir/main.obj: CMakeFiles/salaDeReunion.dir/flags.make
 CMakeFiles/salaDeReunion.dir/main.obj: CMakeFiles/salaDeReunion.dir/includes_CXX.rsp
 CMakeFiles/salaDeReunion.dir/main.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Proyectos\Algo1TPI\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/salaDeReunion.dir/main.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\salaDeReunion.dir\main.obj -c C:\Proyectos\Algo1TPI\src\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\Proyectos\TPDeImplementacionV2.0\Algo1TPI\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/salaDeReunion.dir/main.obj"
+	D:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\salaDeReunion.dir\main.obj -c E:\Proyectos\TPDeImplementacionV2.0\Algo1TPI\src\main.cpp
 
 CMakeFiles/salaDeReunion.dir/main.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/salaDeReunion.dir/main.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Proyectos\Algo1TPI\src\main.cpp > CMakeFiles\salaDeReunion.dir\main.i
+	D:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\Proyectos\TPDeImplementacionV2.0\Algo1TPI\src\main.cpp > CMakeFiles\salaDeReunion.dir\main.i
 
 CMakeFiles/salaDeReunion.dir/main.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/salaDeReunion.dir/main.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Proyectos\Algo1TPI\src\main.cpp -o CMakeFiles\salaDeReunion.dir\main.s
+	D:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\Proyectos\TPDeImplementacionV2.0\Algo1TPI\src\main.cpp -o CMakeFiles\salaDeReunion.dir\main.s
 
 CMakeFiles/salaDeReunion.dir/main.obj.requires:
 
@@ -84,16 +84,16 @@ CMakeFiles/salaDeReunion.dir/main.obj.provides.build: CMakeFiles/salaDeReunion.d
 CMakeFiles/salaDeReunion.dir/solucion.obj: CMakeFiles/salaDeReunion.dir/flags.make
 CMakeFiles/salaDeReunion.dir/solucion.obj: CMakeFiles/salaDeReunion.dir/includes_CXX.rsp
 CMakeFiles/salaDeReunion.dir/solucion.obj: ../solucion.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Proyectos\Algo1TPI\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/salaDeReunion.dir/solucion.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\salaDeReunion.dir\solucion.obj -c C:\Proyectos\Algo1TPI\src\solucion.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\Proyectos\TPDeImplementacionV2.0\Algo1TPI\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/salaDeReunion.dir/solucion.obj"
+	D:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\salaDeReunion.dir\solucion.obj -c E:\Proyectos\TPDeImplementacionV2.0\Algo1TPI\src\solucion.cpp
 
 CMakeFiles/salaDeReunion.dir/solucion.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/salaDeReunion.dir/solucion.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Proyectos\Algo1TPI\src\solucion.cpp > CMakeFiles\salaDeReunion.dir\solucion.i
+	D:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\Proyectos\TPDeImplementacionV2.0\Algo1TPI\src\solucion.cpp > CMakeFiles\salaDeReunion.dir\solucion.i
 
 CMakeFiles/salaDeReunion.dir/solucion.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/salaDeReunion.dir/solucion.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Proyectos\Algo1TPI\src\solucion.cpp -o CMakeFiles\salaDeReunion.dir\solucion.s
+	D:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\Proyectos\TPDeImplementacionV2.0\Algo1TPI\src\solucion.cpp -o CMakeFiles\salaDeReunion.dir\solucion.s
 
 CMakeFiles/salaDeReunion.dir/solucion.obj.requires:
 
@@ -109,16 +109,16 @@ CMakeFiles/salaDeReunion.dir/solucion.obj.provides.build: CMakeFiles/salaDeReuni
 CMakeFiles/salaDeReunion.dir/Funciones_TPI.obj: CMakeFiles/salaDeReunion.dir/flags.make
 CMakeFiles/salaDeReunion.dir/Funciones_TPI.obj: CMakeFiles/salaDeReunion.dir/includes_CXX.rsp
 CMakeFiles/salaDeReunion.dir/Funciones_TPI.obj: ../Funciones_TPI.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Proyectos\Algo1TPI\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/salaDeReunion.dir/Funciones_TPI.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\salaDeReunion.dir\Funciones_TPI.obj -c C:\Proyectos\Algo1TPI\src\Funciones_TPI.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\Proyectos\TPDeImplementacionV2.0\Algo1TPI\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/salaDeReunion.dir/Funciones_TPI.obj"
+	D:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\salaDeReunion.dir\Funciones_TPI.obj -c E:\Proyectos\TPDeImplementacionV2.0\Algo1TPI\src\Funciones_TPI.cpp
 
 CMakeFiles/salaDeReunion.dir/Funciones_TPI.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/salaDeReunion.dir/Funciones_TPI.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Proyectos\Algo1TPI\src\Funciones_TPI.cpp > CMakeFiles\salaDeReunion.dir\Funciones_TPI.i
+	D:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\Proyectos\TPDeImplementacionV2.0\Algo1TPI\src\Funciones_TPI.cpp > CMakeFiles\salaDeReunion.dir\Funciones_TPI.i
 
 CMakeFiles/salaDeReunion.dir/Funciones_TPI.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/salaDeReunion.dir/Funciones_TPI.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Proyectos\Algo1TPI\src\Funciones_TPI.cpp -o CMakeFiles\salaDeReunion.dir\Funciones_TPI.s
+	D:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\Proyectos\TPDeImplementacionV2.0\Algo1TPI\src\Funciones_TPI.cpp -o CMakeFiles\salaDeReunion.dir\Funciones_TPI.s
 
 CMakeFiles/salaDeReunion.dir/Funciones_TPI.obj.requires:
 
@@ -134,16 +134,16 @@ CMakeFiles/salaDeReunion.dir/Funciones_TPI.obj.provides.build: CMakeFiles/salaDe
 CMakeFiles/salaDeReunion.dir/tests/grabacionValidaTEST.obj: CMakeFiles/salaDeReunion.dir/flags.make
 CMakeFiles/salaDeReunion.dir/tests/grabacionValidaTEST.obj: CMakeFiles/salaDeReunion.dir/includes_CXX.rsp
 CMakeFiles/salaDeReunion.dir/tests/grabacionValidaTEST.obj: ../tests/grabacionValidaTEST.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Proyectos\Algo1TPI\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/salaDeReunion.dir/tests/grabacionValidaTEST.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\salaDeReunion.dir\tests\grabacionValidaTEST.obj -c C:\Proyectos\Algo1TPI\src\tests\grabacionValidaTEST.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\Proyectos\TPDeImplementacionV2.0\Algo1TPI\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/salaDeReunion.dir/tests/grabacionValidaTEST.obj"
+	D:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\salaDeReunion.dir\tests\grabacionValidaTEST.obj -c E:\Proyectos\TPDeImplementacionV2.0\Algo1TPI\src\tests\grabacionValidaTEST.cpp
 
 CMakeFiles/salaDeReunion.dir/tests/grabacionValidaTEST.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/salaDeReunion.dir/tests/grabacionValidaTEST.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Proyectos\Algo1TPI\src\tests\grabacionValidaTEST.cpp > CMakeFiles\salaDeReunion.dir\tests\grabacionValidaTEST.i
+	D:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\Proyectos\TPDeImplementacionV2.0\Algo1TPI\src\tests\grabacionValidaTEST.cpp > CMakeFiles\salaDeReunion.dir\tests\grabacionValidaTEST.i
 
 CMakeFiles/salaDeReunion.dir/tests/grabacionValidaTEST.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/salaDeReunion.dir/tests/grabacionValidaTEST.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Proyectos\Algo1TPI\src\tests\grabacionValidaTEST.cpp -o CMakeFiles\salaDeReunion.dir\tests\grabacionValidaTEST.s
+	D:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\Proyectos\TPDeImplementacionV2.0\Algo1TPI\src\tests\grabacionValidaTEST.cpp -o CMakeFiles\salaDeReunion.dir\tests\grabacionValidaTEST.s
 
 CMakeFiles/salaDeReunion.dir/tests/grabacionValidaTEST.obj.requires:
 
@@ -159,16 +159,16 @@ CMakeFiles/salaDeReunion.dir/tests/grabacionValidaTEST.obj.provides.build: CMake
 CMakeFiles/salaDeReunion.dir/tests/elAcaparadorTEST.obj: CMakeFiles/salaDeReunion.dir/flags.make
 CMakeFiles/salaDeReunion.dir/tests/elAcaparadorTEST.obj: CMakeFiles/salaDeReunion.dir/includes_CXX.rsp
 CMakeFiles/salaDeReunion.dir/tests/elAcaparadorTEST.obj: ../tests/elAcaparadorTEST.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Proyectos\Algo1TPI\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/salaDeReunion.dir/tests/elAcaparadorTEST.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\salaDeReunion.dir\tests\elAcaparadorTEST.obj -c C:\Proyectos\Algo1TPI\src\tests\elAcaparadorTEST.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\Proyectos\TPDeImplementacionV2.0\Algo1TPI\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/salaDeReunion.dir/tests/elAcaparadorTEST.obj"
+	D:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\salaDeReunion.dir\tests\elAcaparadorTEST.obj -c E:\Proyectos\TPDeImplementacionV2.0\Algo1TPI\src\tests\elAcaparadorTEST.cpp
 
 CMakeFiles/salaDeReunion.dir/tests/elAcaparadorTEST.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/salaDeReunion.dir/tests/elAcaparadorTEST.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Proyectos\Algo1TPI\src\tests\elAcaparadorTEST.cpp > CMakeFiles\salaDeReunion.dir\tests\elAcaparadorTEST.i
+	D:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\Proyectos\TPDeImplementacionV2.0\Algo1TPI\src\tests\elAcaparadorTEST.cpp > CMakeFiles\salaDeReunion.dir\tests\elAcaparadorTEST.i
 
 CMakeFiles/salaDeReunion.dir/tests/elAcaparadorTEST.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/salaDeReunion.dir/tests/elAcaparadorTEST.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Proyectos\Algo1TPI\src\tests\elAcaparadorTEST.cpp -o CMakeFiles\salaDeReunion.dir\tests\elAcaparadorTEST.s
+	D:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\Proyectos\TPDeImplementacionV2.0\Algo1TPI\src\tests\elAcaparadorTEST.cpp -o CMakeFiles\salaDeReunion.dir\tests\elAcaparadorTEST.s
 
 CMakeFiles/salaDeReunion.dir/tests/elAcaparadorTEST.obj.requires:
 
@@ -184,16 +184,16 @@ CMakeFiles/salaDeReunion.dir/tests/elAcaparadorTEST.obj.provides.build: CMakeFil
 CMakeFiles/salaDeReunion.dir/tests/distanciasTEST.obj: CMakeFiles/salaDeReunion.dir/flags.make
 CMakeFiles/salaDeReunion.dir/tests/distanciasTEST.obj: CMakeFiles/salaDeReunion.dir/includes_CXX.rsp
 CMakeFiles/salaDeReunion.dir/tests/distanciasTEST.obj: ../tests/distanciasTEST.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Proyectos\Algo1TPI\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/salaDeReunion.dir/tests/distanciasTEST.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\salaDeReunion.dir\tests\distanciasTEST.obj -c C:\Proyectos\Algo1TPI\src\tests\distanciasTEST.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\Proyectos\TPDeImplementacionV2.0\Algo1TPI\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/salaDeReunion.dir/tests/distanciasTEST.obj"
+	D:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\salaDeReunion.dir\tests\distanciasTEST.obj -c E:\Proyectos\TPDeImplementacionV2.0\Algo1TPI\src\tests\distanciasTEST.cpp
 
 CMakeFiles/salaDeReunion.dir/tests/distanciasTEST.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/salaDeReunion.dir/tests/distanciasTEST.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Proyectos\Algo1TPI\src\tests\distanciasTEST.cpp > CMakeFiles\salaDeReunion.dir\tests\distanciasTEST.i
+	D:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\Proyectos\TPDeImplementacionV2.0\Algo1TPI\src\tests\distanciasTEST.cpp > CMakeFiles\salaDeReunion.dir\tests\distanciasTEST.i
 
 CMakeFiles/salaDeReunion.dir/tests/distanciasTEST.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/salaDeReunion.dir/tests/distanciasTEST.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Proyectos\Algo1TPI\src\tests\distanciasTEST.cpp -o CMakeFiles\salaDeReunion.dir\tests\distanciasTEST.s
+	D:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\Proyectos\TPDeImplementacionV2.0\Algo1TPI\src\tests\distanciasTEST.cpp -o CMakeFiles\salaDeReunion.dir\tests\distanciasTEST.s
 
 CMakeFiles/salaDeReunion.dir/tests/distanciasTEST.obj.requires:
 
@@ -209,16 +209,16 @@ CMakeFiles/salaDeReunion.dir/tests/distanciasTEST.obj.provides.build: CMakeFiles
 CMakeFiles/salaDeReunion.dir/tests/encontrarAparicionTEST.obj: CMakeFiles/salaDeReunion.dir/flags.make
 CMakeFiles/salaDeReunion.dir/tests/encontrarAparicionTEST.obj: CMakeFiles/salaDeReunion.dir/includes_CXX.rsp
 CMakeFiles/salaDeReunion.dir/tests/encontrarAparicionTEST.obj: ../tests/encontrarAparicionTEST.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Proyectos\Algo1TPI\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/salaDeReunion.dir/tests/encontrarAparicionTEST.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\salaDeReunion.dir\tests\encontrarAparicionTEST.obj -c C:\Proyectos\Algo1TPI\src\tests\encontrarAparicionTEST.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\Proyectos\TPDeImplementacionV2.0\Algo1TPI\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/salaDeReunion.dir/tests/encontrarAparicionTEST.obj"
+	D:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\salaDeReunion.dir\tests\encontrarAparicionTEST.obj -c E:\Proyectos\TPDeImplementacionV2.0\Algo1TPI\src\tests\encontrarAparicionTEST.cpp
 
 CMakeFiles/salaDeReunion.dir/tests/encontrarAparicionTEST.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/salaDeReunion.dir/tests/encontrarAparicionTEST.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Proyectos\Algo1TPI\src\tests\encontrarAparicionTEST.cpp > CMakeFiles\salaDeReunion.dir\tests\encontrarAparicionTEST.i
+	D:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\Proyectos\TPDeImplementacionV2.0\Algo1TPI\src\tests\encontrarAparicionTEST.cpp > CMakeFiles\salaDeReunion.dir\tests\encontrarAparicionTEST.i
 
 CMakeFiles/salaDeReunion.dir/tests/encontrarAparicionTEST.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/salaDeReunion.dir/tests/encontrarAparicionTEST.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Proyectos\Algo1TPI\src\tests\encontrarAparicionTEST.cpp -o CMakeFiles\salaDeReunion.dir\tests\encontrarAparicionTEST.s
+	D:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\Proyectos\TPDeImplementacionV2.0\Algo1TPI\src\tests\encontrarAparicionTEST.cpp -o CMakeFiles\salaDeReunion.dir\tests\encontrarAparicionTEST.s
 
 CMakeFiles/salaDeReunion.dir/tests/encontrarAparicionTEST.obj.requires:
 
@@ -234,16 +234,16 @@ CMakeFiles/salaDeReunion.dir/tests/encontrarAparicionTEST.obj.provides.build: CM
 CMakeFiles/salaDeReunion.dir/tests/ardillizarTEST.obj: CMakeFiles/salaDeReunion.dir/flags.make
 CMakeFiles/salaDeReunion.dir/tests/ardillizarTEST.obj: CMakeFiles/salaDeReunion.dir/includes_CXX.rsp
 CMakeFiles/salaDeReunion.dir/tests/ardillizarTEST.obj: ../tests/ardillizarTEST.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Proyectos\Algo1TPI\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/salaDeReunion.dir/tests/ardillizarTEST.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\salaDeReunion.dir\tests\ardillizarTEST.obj -c C:\Proyectos\Algo1TPI\src\tests\ardillizarTEST.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\Proyectos\TPDeImplementacionV2.0\Algo1TPI\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/salaDeReunion.dir/tests/ardillizarTEST.obj"
+	D:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\salaDeReunion.dir\tests\ardillizarTEST.obj -c E:\Proyectos\TPDeImplementacionV2.0\Algo1TPI\src\tests\ardillizarTEST.cpp
 
 CMakeFiles/salaDeReunion.dir/tests/ardillizarTEST.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/salaDeReunion.dir/tests/ardillizarTEST.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Proyectos\Algo1TPI\src\tests\ardillizarTEST.cpp > CMakeFiles\salaDeReunion.dir\tests\ardillizarTEST.i
+	D:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\Proyectos\TPDeImplementacionV2.0\Algo1TPI\src\tests\ardillizarTEST.cpp > CMakeFiles\salaDeReunion.dir\tests\ardillizarTEST.i
 
 CMakeFiles/salaDeReunion.dir/tests/ardillizarTEST.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/salaDeReunion.dir/tests/ardillizarTEST.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Proyectos\Algo1TPI\src\tests\ardillizarTEST.cpp -o CMakeFiles\salaDeReunion.dir\tests\ardillizarTEST.s
+	D:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\Proyectos\TPDeImplementacionV2.0\Algo1TPI\src\tests\ardillizarTEST.cpp -o CMakeFiles\salaDeReunion.dir\tests\ardillizarTEST.s
 
 CMakeFiles/salaDeReunion.dir/tests/ardillizarTEST.obj.requires:
 
@@ -259,16 +259,16 @@ CMakeFiles/salaDeReunion.dir/tests/ardillizarTEST.obj.provides.build: CMakeFiles
 CMakeFiles/salaDeReunion.dir/tests/silenciosTEST.obj: CMakeFiles/salaDeReunion.dir/flags.make
 CMakeFiles/salaDeReunion.dir/tests/silenciosTEST.obj: CMakeFiles/salaDeReunion.dir/includes_CXX.rsp
 CMakeFiles/salaDeReunion.dir/tests/silenciosTEST.obj: ../tests/silenciosTEST.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Proyectos\Algo1TPI\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/salaDeReunion.dir/tests/silenciosTEST.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\salaDeReunion.dir\tests\silenciosTEST.obj -c C:\Proyectos\Algo1TPI\src\tests\silenciosTEST.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\Proyectos\TPDeImplementacionV2.0\Algo1TPI\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/salaDeReunion.dir/tests/silenciosTEST.obj"
+	D:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\salaDeReunion.dir\tests\silenciosTEST.obj -c E:\Proyectos\TPDeImplementacionV2.0\Algo1TPI\src\tests\silenciosTEST.cpp
 
 CMakeFiles/salaDeReunion.dir/tests/silenciosTEST.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/salaDeReunion.dir/tests/silenciosTEST.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Proyectos\Algo1TPI\src\tests\silenciosTEST.cpp > CMakeFiles\salaDeReunion.dir\tests\silenciosTEST.i
+	D:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\Proyectos\TPDeImplementacionV2.0\Algo1TPI\src\tests\silenciosTEST.cpp > CMakeFiles\salaDeReunion.dir\tests\silenciosTEST.i
 
 CMakeFiles/salaDeReunion.dir/tests/silenciosTEST.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/salaDeReunion.dir/tests/silenciosTEST.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Proyectos\Algo1TPI\src\tests\silenciosTEST.cpp -o CMakeFiles\salaDeReunion.dir\tests\silenciosTEST.s
+	D:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\Proyectos\TPDeImplementacionV2.0\Algo1TPI\src\tests\silenciosTEST.cpp -o CMakeFiles\salaDeReunion.dir\tests\silenciosTEST.s
 
 CMakeFiles/salaDeReunion.dir/tests/silenciosTEST.obj.requires:
 
@@ -281,6 +281,31 @@ CMakeFiles/salaDeReunion.dir/tests/silenciosTEST.obj.provides: CMakeFiles/salaDe
 CMakeFiles/salaDeReunion.dir/tests/silenciosTEST.obj.provides.build: CMakeFiles/salaDeReunion.dir/tests/silenciosTEST.obj
 
 
+CMakeFiles/salaDeReunion.dir/tests/sinSilenciosTEST.obj: CMakeFiles/salaDeReunion.dir/flags.make
+CMakeFiles/salaDeReunion.dir/tests/sinSilenciosTEST.obj: CMakeFiles/salaDeReunion.dir/includes_CXX.rsp
+CMakeFiles/salaDeReunion.dir/tests/sinSilenciosTEST.obj: ../tests/sinSilenciosTEST.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\Proyectos\TPDeImplementacionV2.0\Algo1TPI\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/salaDeReunion.dir/tests/sinSilenciosTEST.obj"
+	D:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\salaDeReunion.dir\tests\sinSilenciosTEST.obj -c E:\Proyectos\TPDeImplementacionV2.0\Algo1TPI\src\tests\sinSilenciosTEST.cpp
+
+CMakeFiles/salaDeReunion.dir/tests/sinSilenciosTEST.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/salaDeReunion.dir/tests/sinSilenciosTEST.i"
+	D:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\Proyectos\TPDeImplementacionV2.0\Algo1TPI\src\tests\sinSilenciosTEST.cpp > CMakeFiles\salaDeReunion.dir\tests\sinSilenciosTEST.i
+
+CMakeFiles/salaDeReunion.dir/tests/sinSilenciosTEST.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/salaDeReunion.dir/tests/sinSilenciosTEST.s"
+	D:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\Proyectos\TPDeImplementacionV2.0\Algo1TPI\src\tests\sinSilenciosTEST.cpp -o CMakeFiles\salaDeReunion.dir\tests\sinSilenciosTEST.s
+
+CMakeFiles/salaDeReunion.dir/tests/sinSilenciosTEST.obj.requires:
+
+.PHONY : CMakeFiles/salaDeReunion.dir/tests/sinSilenciosTEST.obj.requires
+
+CMakeFiles/salaDeReunion.dir/tests/sinSilenciosTEST.obj.provides: CMakeFiles/salaDeReunion.dir/tests/sinSilenciosTEST.obj.requires
+	$(MAKE) -f CMakeFiles\salaDeReunion.dir\build.make CMakeFiles/salaDeReunion.dir/tests/sinSilenciosTEST.obj.provides.build
+.PHONY : CMakeFiles/salaDeReunion.dir/tests/sinSilenciosTEST.obj.provides
+
+CMakeFiles/salaDeReunion.dir/tests/sinSilenciosTEST.obj.provides.build: CMakeFiles/salaDeReunion.dir/tests/sinSilenciosTEST.obj
+
+
 # Object files for target salaDeReunion
 salaDeReunion_OBJECTS = \
 "CMakeFiles/salaDeReunion.dir/main.obj" \
@@ -291,7 +316,8 @@ salaDeReunion_OBJECTS = \
 "CMakeFiles/salaDeReunion.dir/tests/distanciasTEST.obj" \
 "CMakeFiles/salaDeReunion.dir/tests/encontrarAparicionTEST.obj" \
 "CMakeFiles/salaDeReunion.dir/tests/ardillizarTEST.obj" \
-"CMakeFiles/salaDeReunion.dir/tests/silenciosTEST.obj"
+"CMakeFiles/salaDeReunion.dir/tests/silenciosTEST.obj" \
+"CMakeFiles/salaDeReunion.dir/tests/sinSilenciosTEST.obj"
 
 # External object files for target salaDeReunion
 salaDeReunion_EXTERNAL_OBJECTS =
@@ -305,6 +331,7 @@ salaDeReunion_EXTERNAL_OBJECTS =
 ../salaDeReunion.exe: CMakeFiles/salaDeReunion.dir/tests/encontrarAparicionTEST.obj
 ../salaDeReunion.exe: CMakeFiles/salaDeReunion.dir/tests/ardillizarTEST.obj
 ../salaDeReunion.exe: CMakeFiles/salaDeReunion.dir/tests/silenciosTEST.obj
+../salaDeReunion.exe: CMakeFiles/salaDeReunion.dir/tests/sinSilenciosTEST.obj
 ../salaDeReunion.exe: CMakeFiles/salaDeReunion.dir/build.make
 ../salaDeReunion.exe: lib/googletest-master/googlemock/gtest/libgtestd.a
 ../salaDeReunion.exe: lib/googletest-master/googlemock/gtest/libgtest_maind.a
@@ -312,7 +339,7 @@ salaDeReunion_EXTERNAL_OBJECTS =
 ../salaDeReunion.exe: CMakeFiles/salaDeReunion.dir/linklibs.rsp
 ../salaDeReunion.exe: CMakeFiles/salaDeReunion.dir/objects1.rsp
 ../salaDeReunion.exe: CMakeFiles/salaDeReunion.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Proyectos\Algo1TPI\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable ..\salaDeReunion.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=E:\Proyectos\TPDeImplementacionV2.0\Algo1TPI\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable ..\salaDeReunion.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\salaDeReunion.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -329,6 +356,7 @@ CMakeFiles/salaDeReunion.dir/requires: CMakeFiles/salaDeReunion.dir/tests/distan
 CMakeFiles/salaDeReunion.dir/requires: CMakeFiles/salaDeReunion.dir/tests/encontrarAparicionTEST.obj.requires
 CMakeFiles/salaDeReunion.dir/requires: CMakeFiles/salaDeReunion.dir/tests/ardillizarTEST.obj.requires
 CMakeFiles/salaDeReunion.dir/requires: CMakeFiles/salaDeReunion.dir/tests/silenciosTEST.obj.requires
+CMakeFiles/salaDeReunion.dir/requires: CMakeFiles/salaDeReunion.dir/tests/sinSilenciosTEST.obj.requires
 
 .PHONY : CMakeFiles/salaDeReunion.dir/requires
 
@@ -337,6 +365,6 @@ CMakeFiles/salaDeReunion.dir/clean:
 .PHONY : CMakeFiles/salaDeReunion.dir/clean
 
 CMakeFiles/salaDeReunion.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Proyectos\Algo1TPI\src C:\Proyectos\Algo1TPI\src C:\Proyectos\Algo1TPI\src\cmake-build-debug C:\Proyectos\Algo1TPI\src\cmake-build-debug C:\Proyectos\Algo1TPI\src\cmake-build-debug\CMakeFiles\salaDeReunion.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" E:\Proyectos\TPDeImplementacionV2.0\Algo1TPI\src E:\Proyectos\TPDeImplementacionV2.0\Algo1TPI\src E:\Proyectos\TPDeImplementacionV2.0\Algo1TPI\src\cmake-build-debug E:\Proyectos\TPDeImplementacionV2.0\Algo1TPI\src\cmake-build-debug E:\Proyectos\TPDeImplementacionV2.0\Algo1TPI\src\cmake-build-debug\CMakeFiles\salaDeReunion.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/salaDeReunion.dir/depend
 

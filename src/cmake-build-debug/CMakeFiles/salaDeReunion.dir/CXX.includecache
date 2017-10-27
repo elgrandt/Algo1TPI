@@ -278,7 +278,7 @@ cxxabi.h
 acxx_demangle.h
 -
 
-C:/Proyectos/Algo1TPI/src/Funciones_TPI.cpp
+E:/Proyectos/TPDeImplementacionV2.0/Algo1TPI/src/Funciones_TPI.cpp
 iostream
 -
 vector
@@ -288,9 +288,9 @@ fstream
 math.h
 -
 Funciones_TPI.h
-C:/Proyectos/Algo1TPI/src/Funciones_TPI.h
+E:/Proyectos/TPDeImplementacionV2.0/Algo1TPI/src/Funciones_TPI.h
 
-C:/Proyectos/Algo1TPI/src/Funciones_TPI.h
+E:/Proyectos/TPDeImplementacionV2.0/Algo1TPI/src/Funciones_TPI.h
 iostream
 -
 vector
@@ -298,9 +298,9 @@ vector
 fstream
 -
 definiciones.h
-C:/Proyectos/Algo1TPI/src/definiciones.h
+E:/Proyectos/TPDeImplementacionV2.0/Algo1TPI/src/definiciones.h
 
-C:/Proyectos/Algo1TPI/src/definiciones.h
+E:/Proyectos/TPDeImplementacionV2.0/Algo1TPI/src/definiciones.h
 iostream
 -
 vector
@@ -308,7 +308,7 @@ vector
 tuple
 -
 
-C:/Proyectos/Algo1TPI/src/ejercicios.h
+E:/Proyectos/TPDeImplementacionV2.0/Algo1TPI/src/ejercicios.h
 iostream
 -
 vector
@@ -318,89 +318,101 @@ math.h
 tuple
 -
 definiciones.h
-C:/Proyectos/Algo1TPI/src/definiciones.h
+E:/Proyectos/TPDeImplementacionV2.0/Algo1TPI/src/definiciones.h
 
-C:/Proyectos/Algo1TPI/src/funcionesAuxiliares.h
+E:/Proyectos/TPDeImplementacionV2.0/Algo1TPI/src/funcionesAuxiliares.h
 
-C:/Proyectos/Algo1TPI/src/main.cpp
+E:/Proyectos/TPDeImplementacionV2.0/Algo1TPI/src/main.cpp
 iostream
 -
 gtest/gtest.h
-C:/Proyectos/Algo1TPI/src/gtest/gtest.h
+E:/Proyectos/TPDeImplementacionV2.0/Algo1TPI/src/gtest/gtest.h
 
-C:/Proyectos/Algo1TPI/src/solucion.cpp
+E:/Proyectos/TPDeImplementacionV2.0/Algo1TPI/src/solucion.cpp
 ejercicios.h
-C:/Proyectos/Algo1TPI/src/ejercicios.h
+E:/Proyectos/TPDeImplementacionV2.0/Algo1TPI/src/ejercicios.h
 Funciones_TPI.h
-C:/Proyectos/Algo1TPI/src/Funciones_TPI.h
+E:/Proyectos/TPDeImplementacionV2.0/Algo1TPI/src/Funciones_TPI.h
 math.h
-C:/Proyectos/Algo1TPI/src/math.h
+E:/Proyectos/TPDeImplementacionV2.0/Algo1TPI/src/math.h
 definiciones.h
-C:/Proyectos/Algo1TPI/src/definiciones.h
+E:/Proyectos/TPDeImplementacionV2.0/Algo1TPI/src/definiciones.h
 funcionesAuxiliares.h
-C:/Proyectos/Algo1TPI/src/funcionesAuxiliares.h
+E:/Proyectos/TPDeImplementacionV2.0/Algo1TPI/src/funcionesAuxiliares.h
 
-C:/Proyectos/Algo1TPI/src/tests/ardillizarTEST.cpp
+E:/Proyectos/TPDeImplementacionV2.0/Algo1TPI/src/tests/ardillizarTEST.cpp
 ../Funciones_TPI.h
-C:/Proyectos/Algo1TPI/src/Funciones_TPI.h
+E:/Proyectos/TPDeImplementacionV2.0/Algo1TPI/src/Funciones_TPI.h
 ../ejercicios.h
-C:/Proyectos/Algo1TPI/src/ejercicios.h
+E:/Proyectos/TPDeImplementacionV2.0/Algo1TPI/src/ejercicios.h
 gtest/gtest.h
-C:/Proyectos/Algo1TPI/src/tests/gtest/gtest.h
+E:/Proyectos/TPDeImplementacionV2.0/Algo1TPI/src/tests/gtest/gtest.h
 iostream
 -
 string
 -
 
-C:/Proyectos/Algo1TPI/src/tests/distanciasTEST.cpp
+E:/Proyectos/TPDeImplementacionV2.0/Algo1TPI/src/tests/distanciasTEST.cpp
 ../Funciones_TPI.h
-C:/Proyectos/Algo1TPI/src/Funciones_TPI.h
+E:/Proyectos/TPDeImplementacionV2.0/Algo1TPI/src/Funciones_TPI.h
 ../ejercicios.h
-C:/Proyectos/Algo1TPI/src/ejercicios.h
+E:/Proyectos/TPDeImplementacionV2.0/Algo1TPI/src/ejercicios.h
 gtest/gtest.h
-C:/Proyectos/Algo1TPI/src/tests/gtest/gtest.h
+E:/Proyectos/TPDeImplementacionV2.0/Algo1TPI/src/tests/gtest/gtest.h
 iostream
 -
 string
 -
 
-C:/Proyectos/Algo1TPI/src/tests/elAcaparadorTEST.cpp
+E:/Proyectos/TPDeImplementacionV2.0/Algo1TPI/src/tests/elAcaparadorTEST.cpp
 ../ejercicios.h
-C:/Proyectos/Algo1TPI/src/ejercicios.h
+E:/Proyectos/TPDeImplementacionV2.0/Algo1TPI/src/ejercicios.h
 gtest/gtest.h
-C:/Proyectos/Algo1TPI/src/tests/gtest/gtest.h
+E:/Proyectos/TPDeImplementacionV2.0/Algo1TPI/src/tests/gtest/gtest.h
 
-C:/Proyectos/Algo1TPI/src/tests/encontrarAparicionTEST.cpp
+E:/Proyectos/TPDeImplementacionV2.0/Algo1TPI/src/tests/encontrarAparicionTEST.cpp
 ../Funciones_TPI.h
-C:/Proyectos/Algo1TPI/src/Funciones_TPI.h
+E:/Proyectos/TPDeImplementacionV2.0/Algo1TPI/src/Funciones_TPI.h
 ../ejercicios.h
-C:/Proyectos/Algo1TPI/src/ejercicios.h
+E:/Proyectos/TPDeImplementacionV2.0/Algo1TPI/src/ejercicios.h
 gtest/gtest.h
-C:/Proyectos/Algo1TPI/src/tests/gtest/gtest.h
+E:/Proyectos/TPDeImplementacionV2.0/Algo1TPI/src/tests/gtest/gtest.h
 iostream
 -
 string
 -
 
-C:/Proyectos/Algo1TPI/src/tests/grabacionValidaTEST.cpp
+E:/Proyectos/TPDeImplementacionV2.0/Algo1TPI/src/tests/grabacionValidaTEST.cpp
 ../Funciones_TPI.h
-C:/Proyectos/Algo1TPI/src/Funciones_TPI.h
+E:/Proyectos/TPDeImplementacionV2.0/Algo1TPI/src/Funciones_TPI.h
 ../ejercicios.h
-C:/Proyectos/Algo1TPI/src/ejercicios.h
+E:/Proyectos/TPDeImplementacionV2.0/Algo1TPI/src/ejercicios.h
 gtest/gtest.h
-C:/Proyectos/Algo1TPI/src/tests/gtest/gtest.h
+E:/Proyectos/TPDeImplementacionV2.0/Algo1TPI/src/tests/gtest/gtest.h
 iostream
 -
 string
 -
 
-C:/Proyectos/Algo1TPI/src/tests/silenciosTEST.cpp
+E:/Proyectos/TPDeImplementacionV2.0/Algo1TPI/src/tests/silenciosTEST.cpp
 ../Funciones_TPI.h
-C:/Proyectos/Algo1TPI/src/Funciones_TPI.h
+E:/Proyectos/TPDeImplementacionV2.0/Algo1TPI/src/Funciones_TPI.h
 ../ejercicios.h
-C:/Proyectos/Algo1TPI/src/ejercicios.h
+E:/Proyectos/TPDeImplementacionV2.0/Algo1TPI/src/ejercicios.h
 gtest/gtest.h
-C:/Proyectos/Algo1TPI/src/tests/gtest/gtest.h
+E:/Proyectos/TPDeImplementacionV2.0/Algo1TPI/src/tests/gtest/gtest.h
+iostream
+-
+string
+-
+
+E:/Proyectos/TPDeImplementacionV2.0/Algo1TPI/src/tests/sinSilenciosTEST.cpp
+../Funciones_TPI.h
+E:/Proyectos/TPDeImplementacionV2.0/Algo1TPI/src/Funciones_TPI.h
+../ejercicios.h
+E:/Proyectos/TPDeImplementacionV2.0/Algo1TPI/src/ejercicios.h
+gtest/gtest.h
+E:/Proyectos/TPDeImplementacionV2.0/Algo1TPI/src/tests/gtest/gtest.h
 iostream
 -
 string

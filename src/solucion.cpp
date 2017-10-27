@@ -196,6 +196,7 @@ void interPolar(audio &resi, audio mi) {
 }
 
 /************************** EJERCICIO silencios **************************/
+/*/
 lista_intervalos silencios(audio s, int prof, int freq, int umbral){
     lista_intervalos res;
 
@@ -217,6 +218,41 @@ lista_intervalos silencios(audio s, int prof, int freq, int umbral){
             res.push_back(silencioActual);
             x = int(get<1>(silencioActual) * freq);
         }
+    }
+
+    return res;
+}
+//*/
+//lista_intervalos silencios(audio s, int prof, int freq, int umbral, float tiempoMinimo){
+lista_intervalos silencios(audio s, int prof, int freq, int umbral){
+    lista_intervalos res;
+
+    tiempo tiempoMinimo = 0.1;
+
+    int indicesMinimos = int(tiempoMinimo * freq);
+    int x = 0;
+
+    while( x < s.size() - indicesMinimos){
+        float end = -1;
+        for (int y = x; y < s.size(); y++){
+            if (abs(s[y]) < umbral){
+                if (y - x >= indicesMinimos){
+                    if (y == s.size()-1){
+                        end = float(y)/freq;
+                        break;
+                    }
+                    // Es y+1 porque el silencio cuenta hasta exactamente el instante en que supera el umbral porque asi lo dice el caso de ejemplo dado
+                    end = float(y+1)/freq;
+                }
+            }else{
+                break;
+            }
+        }
+        if (end != -1){
+            res.push_back(make_tuple(float(x)/freq,end));
+            x = int(end * freq);
+        }
+        x++;
     }
 
     return res;
@@ -351,20 +387,28 @@ float intensidadCorrelacion(audio personai, audio frase) {
 
 /************************** EJERCICIO sinSilencios **************************/
 
-bool indicePerteneceASilencio(int indice, vector<intervalo> listaDeSilencios, int freq);
+//bool indicePerteneceASilencio(int indice, vector<intervalo> listaDeSilencios, int freq);
 
-audio sinSilencios (audio vec , int freq , int prof, int umbral){
+audio sinSilencios (audio vec , vector<intervalo> listaDeSilencios, int freq , int prof, int umbral){
     audio audioSinSilencios;
 
     //Obtenemos los silencios del audio pasado
-    vector<intervalo> listaDeSilencios = silencios(vec, prof, freq, umbral);
+    //vector<intervalo> listaDeSilencios = silencios(vec, prof, freq, umbral);
 
     int i = 0;
 
     while(i < vec.size()){
+        //*/
         if(!indicePerteneceASilencio(i, listaDeSilencios, freq)){
             audioSinSilencios.push_back(vec[i]);
         }
+        //*/
+
+        /*/
+        if(!estaEnSilencio(vec, i, prof, freq, umbral)){
+            audioSinSilencios.push_back(vec[i]);
+        }
+        //*/
 
         i++;
     }
@@ -378,7 +422,7 @@ bool indicePerteneceASilencio(int indice, vector<intervalo> listaDeSilencios, in
     int cont = 0;
 
     while(cont < listaDeSilencios.size()){
-        if(indice >= (get<0>(listaDeSilencios[cont]) * freq) && indice <= (get<1>(listaDeSilencios[cont]) * freq)){
+        if(indice >= (get<0>(listaDeSilencios[cont]) * freq) && indice < (get<1>(listaDeSilencios[cont]) * freq)){
             pertenece = true;
             break;
         }

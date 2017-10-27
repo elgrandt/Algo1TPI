@@ -1,4 +1,4 @@
-# Install script for directory: C:/Proyectos/Algo1TPI/src/lib/googletest-master/googletest
+# Install script for directory: E:/Proyectos/TPDeImplementacionV2.0/Algo1TPI/src/lib/googletest-master/googletest
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -28,21 +28,21 @@ if(NOT CMAKE_INSTALL_COMPONENT)
 endif()
 
 if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Proyectos/Algo1TPI/src/cmake-build-debug/lib/googletest-master/googlemock/gtest/libgtestd.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "E:/Proyectos/TPDeImplementacionV2.0/Algo1TPI/src/cmake-build-debug/lib/googletest-master/googlemock/gtest/libgtestd.a")
 endif()
 
 if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Proyectos/Algo1TPI/src/cmake-build-debug/lib/googletest-master/googlemock/gtest/libgtest_maind.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "E:/Proyectos/TPDeImplementacionV2.0/Algo1TPI/src/cmake-build-debug/lib/googletest-master/googlemock/gtest/libgtest_maind.a")
 endif()
 
 if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "C:/Proyectos/Algo1TPI/src/lib/googletest-master/googletest/include/gtest")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "E:/Proyectos/TPDeImplementacionV2.0/Algo1TPI/src/lib/googletest-master/googletest/include/gtest")
 endif()
 
 if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES
-    "C:/Proyectos/Algo1TPI/src/cmake-build-debug/gtest.pc"
-    "C:/Proyectos/Algo1TPI/src/cmake-build-debug/gtest_main.pc"
+    "E:/Proyectos/TPDeImplementacionV2.0/Algo1TPI/src/cmake-build-debug/gtest.pc"
+    "E:/Proyectos/TPDeImplementacionV2.0/Algo1TPI/src/cmake-build-debug/gtest_main.pc"
     )
 endif()
 
