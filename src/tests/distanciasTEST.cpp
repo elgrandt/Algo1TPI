@@ -7,7 +7,11 @@
 #include <string>
 
 using namespace std;
+<<<<<<< HEAD
+
+=======
 /*
+>>>>>>> master
 TEST(distanciasTEST, subaudioLongitud) {
     audio v = {1,2,3,4,5,6};
     audio v2 = subAudio(v,2,2);
@@ -45,7 +49,12 @@ TEST(distanciasTEST, lecturaAudio) {
     EXPECT_EQ(duracion, 120);
     EXPECT_EQ(duracion, spk0.size()/frecuencia);
 }
+<<<<<<< HEAD
+
+
+=======
 */
+>>>>>>> master
 TEST(distanciasTEST, testBEEP) {
     int frecuencia, profundidad,duracion;
     int startPOINT, endPOINT;
@@ -73,6 +82,10 @@ TEST(distanciasTEST, testBEEP) {
     EXPECT_EQ(1,get<0>(spk));
 }
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> master
 TEST(distanciasTEST, leerSala) {
     int frecuencia, profundidad,duracion;
     vector<string> lista_archivos = {"datos/spkr0.dat",

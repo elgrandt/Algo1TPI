@@ -31,6 +31,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< HEAD
+      <file leaf-file-name="encontrarAparicionTEST.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/encontrarAparicionTEST.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="21" column="38" lean-forward="false" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="39" />
+=======
       <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
@@ -41,11 +48,20 @@
             <state relative-caret-position="0">
               <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
 >>>>>>> 8d8e827a0ba54853f088ffc0da3c8e6966072d6e
+>>>>>>> master
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+      <file leaf-file-name="Funciones_TPI.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Funciones_TPI.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
+=======
       <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
@@ -68,10 +84,19 @@
               <folding>
                 <element signature="e#113#136#0" expanded="true" />
               </folding>
+>>>>>>> master
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+      <file leaf-file-name="funcionesAuxiliares.h" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/funcionesAuxiliares.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+              <folding />
+=======
 <<<<<<< HEAD
       <file leaf-file-name="gtest-port.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/googletest-master/googletest/include/gtest/internal/gtest-port.h">
@@ -84,6 +109,7 @@
                 <element signature="e#82794#82987#0" expanded="true" />
                 <element signature="e#83043#83088#0" expanded="true" />
               </folding>
+>>>>>>> master
             </state>
           </provider>
         </entry>
@@ -93,6 +119,12 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>subseq</find>
+<<<<<<< HEAD
+      <find>calcularMax</find>
+      <find>tMinimo</find>
+    </findStrings>
+  </component>
+=======
       <find>C:/Users/Diego/Documents/Facultad/Algoritmos/Labo/TP_Implementacion/salaDeReuniones_TPI</find>
     </findStrings>
     <replaceStrings>
@@ -103,6 +135,7 @@
     </leaf>
   </component>
 >>>>>>> 8d8e827a0ba54853f088ffc0da3c8e6966072d6e
+>>>>>>> master
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -113,6 +146,19 @@
         <option value="$PROJECT_DIR$/datos/habla_spkr4.txt" />
         <option value="$PROJECT_DIR$/datos/habla_spkr5.txt" />
         <option value="$PROJECT_DIR$/datos/habla_spkrdefault.txt" />
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/definiciones.h" />
+        <option value="$PROJECT_DIR$/Funciones_TPI.cpp" />
+        <option value="$PROJECT_DIR$/tests/ardillizarTEST.cpp" />
+        <option value="$PROJECT_DIR$/tests/encontrarAparicionTEST.cpp" />
+        <option value="$PROJECT_DIR$/ejercicios.h" />
+        <option value="$PROJECT_DIR$/tests/flashElPerezosoTEST.cpp" />
+        <option value="$PROJECT_DIR$/tests/silenciosTEST.cpp" />
+        <option value="$PROJECT_DIR$/tests/distanciasTEST.cpp" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/solucion.cpp" />
+        <option value="$PROJECT_DIR$/funcionesAuxiliares.h" />
+=======
         <option value="$PROJECT_DIR$/ejercicios.h" />
         <option value="$PROJECT_DIR$/definiciones.h" />
         <option value="$PROJECT_DIR$/tests/silenciosTEST.cpp" />
@@ -130,6 +176,7 @@
 =======
         <option value="$PROJECT_DIR$/lib/googletest-master/googletest/include/gtest/internal/gtest-port.h" />
 >>>>>>> 8d8e827a0ba54853f088ffc0da3c8e6966072d6e
+>>>>>>> master
       </list>
     </option>
   </component>
@@ -142,10 +189,19 @@
 <<<<<<< HEAD
   <component name="OCFindUsagesOptions" text="false" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-183" />
+    <option name="y" value="196" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+=======
+<<<<<<< HEAD
+  <component name="OCFindUsagesOptions" text="false" ivars="false" properties="true" derivedClasses="false" />
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1382" />
     <option name="height" value="744" />
+>>>>>>> master
   </component>
 =======
 >>>>>>> 8d8e827a0ba54853f088ffc0da3c8e6966072d6e
@@ -171,6 +227,16 @@
               <item name="salaDeReunion" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="salaDeReunion" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="datos" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="salaDeReunion" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -180,7 +246,10 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+<<<<<<< HEAD
+=======
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+>>>>>>> master
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -199,7 +268,11 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
+  <component name="RunManager" selected="Application.Build All">
+=======
   <component name="RunManager" selected="Application.salaDeReunion">
+>>>>>>> master
     <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="salaDeReunion" TARGET_NAME="salaDeReunion" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="salaDeReunion" RUN_TARGET_NAME="salaDeReunion">
       <envs />
     </configuration>
@@ -397,22 +470,51 @@
       <updated>1508623782007</updated>
       <workItem from="1508623785279" duration="188000" />
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
       <workItem from="1508798219419" duration="8183000" />
       <workItem from="1508883190625" duration="6171000" />
       <workItem from="1508936605147" duration="7360000" />
       <workItem from="1508944365758" duration="7966000" />
       <workItem from="1508956805180" duration="14695000" />
       <workItem from="1508973313545" duration="2922000" />
+<<<<<<< HEAD
+      <workItem from="1509134212262" duration="13307000" />
+      <workItem from="1509300069629" duration="895000" />
+=======
       <workItem from="1509064911482" duration="6333000" />
 =======
       <workItem from="1508770871230" duration="525000" />
       <workItem from="1508963458648" duration="1012000" />
       <workItem from="1509057029588" duration="249000" />
 >>>>>>> 8d8e827a0ba54853f088ffc0da3c8e6966072d6e
+>>>>>>> master
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="61687000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32944915" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32944915" sideWeight="0.50208336" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.10487288" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29025424" sideWeight="0.49791667" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.53919494" sideWeight="0.49583334" order="11" side_tool="false" content_ui="tabs" />
+=======
 <<<<<<< HEAD
     <option name="totallyTimeSpent" value="54467000" />
 =======
@@ -450,6 +552,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35759494" sideWeight="0.49583334" order="11" side_tool="false" content_ui="tabs" />
+>>>>>>> master
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -459,9 +562,13 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41613925" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+<<<<<<< HEAD
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32627118" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+=======
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32627118" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+>>>>>>> master
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39618644" sideWeight="0.49791667" order="3" side_tool="false" content_ui="tabs" />
@@ -476,6 +583,12 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+<<<<<<< HEAD
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="151" />
+=======
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/solucion.cpp</url>
@@ -567,10 +680,14 @@
         <breakpoints-dialog />
       </breakpoints-dialog>
       <option name="time" value="126" />
+>>>>>>> master
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/tests/silenciosTEST.cpp">
+=======
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/main.cpp">
 =======
@@ -583,13 +700,21 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/solucion.cpp">
+>>>>>>> master
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="12" lean-forward="false" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+        <state relative-caret-position="405">
+          <caret line="15" column="45" lean-forward="false" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/tests/encontrarAparicionTEST.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="17" column="41" lean-forward="true" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+          <folding />
+=======
     <entry file="file://$PROJECT_DIR$/lib/googletest-master/googletest/include/gtest/internal/gtest-port.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40103">
@@ -624,6 +749,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="17" column="41" lean-forward="true" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+>>>>>>> master
         </state>
       </provider>
     </entry>
@@ -631,6 +757,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1431">
           <caret line="53" column="41" lean-forward="false" selection-start-line="53" selection-start-column="41" selection-end-line="53" selection-end-column="41" />
+<<<<<<< HEAD
+          <folding>
+            <element signature="e#1#30#0" expanded="true" />
+=======
           <folding />
         </state>
       </provider>
@@ -641,14 +771,52 @@
           <caret line="275" column="54" lean-forward="false" selection-start-line="275" selection-start-column="54" selection-end-line="275" selection-end-column="54" />
           <folding>
             <element signature="e#113#136#0" expanded="true" />
+>>>>>>> master
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/solucion.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7425">
+          <caret line="275" column="54" lean-forward="false" selection-start-line="275" selection-start-column="54" selection-end-line="275" selection-end-column="54" />
+          <folding>
+            <element signature="e#113#136#0" expanded="true" />
+            <element signature="e#263#578#0" expanded="false" />
+            <element signature="e#699#989#0" expanded="false" />
+            <element signature="e#990#1300#0" expanded="false" />
+            <element signature="e#1301#1383#0" expanded="false" />
+            <element signature="e#1384#1459#0" expanded="false" />
+            <element signature="e#1460#1542#0" expanded="false" />
+            <element signature="e#1543#1727#0" expanded="false" />
+            <element signature="e#1728#1931#0" expanded="false" />
+            <element signature="e#1932#2129#0" expanded="false" />
+            <element signature="e#2130#2235#0" expanded="false" />
+            <element signature="e#2237#2702#0" expanded="false" />
+            <element signature="e#2704#3352#0" expanded="false" />
+            <element signature="e#3353#3587#0" expanded="false" />
+            <element signature="e#3589#4298#0" expanded="false" />
+            <element signature="e#4299#4350#0" expanded="false" />
+            <element signature="e#4351#4647#0" expanded="false" />
+            <element signature="e#4649#5689#0" expanded="false" />
+            <element signature="e#6913#7327#0" expanded="false" />
+            <element signature="e#7329#7516#0" expanded="false" />
+            <element signature="e#7519#7955#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+=======
+>>>>>>> master
     <entry file="file://$PROJECT_DIR$/tests/encontrarAparicionTEST.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="486">
           <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+<<<<<<< HEAD
+          <folding />
+=======
+>>>>>>> master
         </state>
       </provider>
     </entry>
@@ -656,6 +824,100 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="81">
           <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+<<<<<<< HEAD
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datos/spkr0.dat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/solucion.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5670">
+          <caret line="210" column="22" lean-forward="true" selection-start-line="210" selection-start-column="22" selection-end-line="210" selection-end-column="22" />
+          <folding>
+            <element signature="e#113#136#0" expanded="true" />
+            <element signature="e#263#578#0" expanded="false" />
+            <element signature="e#699#989#0" expanded="false" />
+            <element signature="e#990#1300#0" expanded="false" />
+            <element signature="e#1301#1383#0" expanded="false" />
+            <element signature="e#1384#1459#0" expanded="false" />
+            <element signature="e#1460#1542#0" expanded="false" />
+            <element signature="e#1543#1727#0" expanded="false" />
+            <element signature="e#1728#1931#0" expanded="false" />
+            <element signature="e#1932#2129#0" expanded="false" />
+            <element signature="e#2130#2235#0" expanded="false" />
+            <element signature="e#2237#2702#0" expanded="false" />
+            <element signature="e#2704#3352#0" expanded="false" />
+            <element signature="e#3353#3587#0" expanded="false" />
+            <element signature="e#3589#4298#0" expanded="false" />
+            <element signature="e#4299#4350#0" expanded="false" />
+            <element signature="e#4351#4647#0" expanded="false" />
+            <element signature="e#4649#5689#0" expanded="false" />
+            <element signature="e#6913#7327#0" expanded="false" />
+            <element signature="e#7329#7516#0" expanded="false" />
+            <element signature="e#7519#7955#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Funciones_TPI.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1053">
+          <caret line="39" column="18" lean-forward="true" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
+          <folding>
+            <element signature="e#42#61#0" expanded="false" />
+            <element signature="e#557#1573#0" expanded="false" />
+            <element signature="e#1576#1954#0" expanded="false" />
+            <element signature="e#1956#2379#0" expanded="false" />
+            <element signature="e#2381#2832#0" expanded="false" />
+            <element signature="e#2834#3065#0" expanded="false" />
+            <element signature="e#3067#3575#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/solucion.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3240">
+          <caret line="120" column="78" lean-forward="false" selection-start-line="120" selection-start-column="78" selection-end-line="120" selection-end-column="78" />
+          <folding>
+            <element signature="e#113#136#0" expanded="true" />
+            <element signature="e#263#578#0" expanded="false" />
+            <element signature="e#699#989#0" expanded="false" />
+            <element signature="e#990#1300#0" expanded="false" />
+            <element signature="e#1301#1383#0" expanded="false" />
+            <element signature="e#1384#1459#0" expanded="false" />
+            <element signature="e#1460#1542#0" expanded="false" />
+            <element signature="e#1543#1727#0" expanded="false" />
+            <element signature="e#1728#1931#0" expanded="false" />
+            <element signature="e#1932#2129#0" expanded="false" />
+            <element signature="e#2130#2235#0" expanded="false" />
+            <element signature="e#2237#2702#0" expanded="false" />
+            <element signature="e#2704#3352#0" expanded="false" />
+            <element signature="e#3353#3587#0" expanded="false" />
+            <element signature="e#3589#4298#0" expanded="false" />
+            <element signature="e#4299#4350#0" expanded="false" />
+            <element signature="e#4351#4647#0" expanded="false" />
+            <element signature="e#4649#5689#0" expanded="false" />
+            <element signature="e#6913#7327#0" expanded="false" />
+            <element signature="e#7329#7516#0" expanded="false" />
+            <element signature="e#7519#7955#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/ardillizarTEST.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+=======
+>>>>>>> master
           <folding />
         </state>
       </provider>
@@ -707,6 +969,29 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#113#136#0" expanded="true" />
+<<<<<<< HEAD
+            <element signature="e#263#578#0" expanded="false" />
+            <element signature="e#699#989#0" expanded="false" />
+            <element signature="e#990#1300#0" expanded="false" />
+            <element signature="e#1301#1383#0" expanded="false" />
+            <element signature="e#1384#1459#0" expanded="false" />
+            <element signature="e#1460#1542#0" expanded="false" />
+            <element signature="e#1543#1727#0" expanded="false" />
+            <element signature="e#1728#1931#0" expanded="false" />
+            <element signature="e#1932#2129#0" expanded="false" />
+            <element signature="e#2130#2235#0" expanded="false" />
+            <element signature="e#2237#2702#0" expanded="false" />
+            <element signature="e#2704#3352#0" expanded="false" />
+            <element signature="e#3353#3587#0" expanded="false" />
+            <element signature="e#3589#4298#0" expanded="false" />
+            <element signature="e#4299#4350#0" expanded="false" />
+            <element signature="e#4351#4647#0" expanded="false" />
+            <element signature="e#4649#5689#0" expanded="false" />
+            <element signature="e#6913#7327#0" expanded="false" />
+            <element signature="e#7329#7516#0" expanded="false" />
+            <element signature="e#7519#7955#0" expanded="false" />
+=======
+>>>>>>> master
           </folding>
         </state>
       </provider>
@@ -715,6 +1000,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
           <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+<<<<<<< HEAD
           <folding />
         </state>
       </provider>
@@ -723,9 +1009,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+=======
+>>>>>>> master
+          <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/tests/grabacionValidaTEST.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> master
     <entry file="file://$PROJECT_DIR$/lib/googletest-master/googletest/src/gtest.cc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64854">
@@ -739,6 +1038,29 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#113#136#0" expanded="true" />
+<<<<<<< HEAD
+            <element signature="e#263#578#0" expanded="false" />
+            <element signature="e#699#989#0" expanded="false" />
+            <element signature="e#990#1300#0" expanded="false" />
+            <element signature="e#1301#1383#0" expanded="false" />
+            <element signature="e#1384#1459#0" expanded="false" />
+            <element signature="e#1460#1542#0" expanded="false" />
+            <element signature="e#1543#1727#0" expanded="false" />
+            <element signature="e#1728#1931#0" expanded="false" />
+            <element signature="e#1932#2129#0" expanded="false" />
+            <element signature="e#2130#2235#0" expanded="false" />
+            <element signature="e#2237#2702#0" expanded="false" />
+            <element signature="e#2704#3352#0" expanded="false" />
+            <element signature="e#3353#3587#0" expanded="false" />
+            <element signature="e#3589#4298#0" expanded="false" />
+            <element signature="e#4299#4350#0" expanded="false" />
+            <element signature="e#4351#4647#0" expanded="false" />
+            <element signature="e#4649#5689#0" expanded="false" />
+            <element signature="e#6913#7327#0" expanded="false" />
+            <element signature="e#7329#7516#0" expanded="false" />
+            <element signature="e#7519#7955#0" expanded="false" />
+=======
+>>>>>>> master
           </folding>
         </state>
       </provider>
@@ -747,10 +1069,31 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="567">
           <caret line="21" column="30" lean-forward="false" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+<<<<<<< HEAD
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ejercicios.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/definiciones.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="24" column="18" lean-forward="false" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+=======
+>>>>>>> master
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+=======
     <entry file="file://$PROJECT_DIR$/ejercicios.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="513">
@@ -765,12 +1108,36 @@
         </state>
       </provider>
     </entry>
+>>>>>>> master
     <entry file="file://$PROJECT_DIR$/solucion.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="513">
           <caret line="19" column="12" lean-forward="false" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
           <folding>
             <element signature="e#113#136#0" expanded="true" />
+<<<<<<< HEAD
+            <element signature="e#263#578#0" expanded="false" />
+            <element signature="e#699#989#0" expanded="false" />
+            <element signature="e#990#1300#0" expanded="false" />
+            <element signature="e#1301#1383#0" expanded="false" />
+            <element signature="e#1384#1459#0" expanded="false" />
+            <element signature="e#1460#1542#0" expanded="false" />
+            <element signature="e#1543#1727#0" expanded="false" />
+            <element signature="e#1728#1931#0" expanded="false" />
+            <element signature="e#1932#2129#0" expanded="false" />
+            <element signature="e#2130#2235#0" expanded="false" />
+            <element signature="e#2237#2702#0" expanded="false" />
+            <element signature="e#2704#3352#0" expanded="false" />
+            <element signature="e#3353#3587#0" expanded="false" />
+            <element signature="e#3589#4298#0" expanded="false" />
+            <element signature="e#4299#4350#0" expanded="false" />
+            <element signature="e#4351#4647#0" expanded="false" />
+            <element signature="e#4649#5689#0" expanded="false" />
+            <element signature="e#6913#7327#0" expanded="false" />
+            <element signature="e#7329#7516#0" expanded="false" />
+            <element signature="e#7519#7955#0" expanded="false" />
+=======
+>>>>>>> master
           </folding>
         </state>
       </provider>
@@ -779,6 +1146,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
           <caret line="13" column="70" lean-forward="false" selection-start-line="13" selection-start-column="70" selection-end-line="13" selection-end-column="70" />
+<<<<<<< HEAD
+          <folding />
+=======
+>>>>>>> master
         </state>
       </provider>
     </entry>
@@ -790,6 +1161,8 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/funcionesAuxiliares.h" />
+<<<<<<< HEAD
+=======
     <entry file="file://$PROJECT_DIR$/datos/habla_spkr1.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="554">
@@ -797,6 +1170,7 @@
         </state>
       </provider>
     </entry>
+>>>>>>> master
     <entry file="file://$PROJECT_DIR$/datos/habla_spkr2.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
@@ -832,6 +1206,8 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+=======
     <entry file="file://$PROJECT_DIR$/ejercicios.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
@@ -839,6 +1215,7 @@
         </state>
       </provider>
     </entry>
+>>>>>>> master
     <entry file="file://$PROJECT_DIR$/datos/spkr0.dat">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -854,6 +1231,48 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/pzm.dat" />
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/lib/googletest-master/googletest/src/gtest.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="2771" column="0" lean-forward="false" selection-start-line="2771" selection-start-column="0" selection-end-line="2771" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/lib/gcc/x86_64-w64-mingw32/7.1.0/include/c++/bits/stl_vector.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="327" column="0" lean-forward="false" selection-start-line="327" selection-start-column="0" selection-end-line="327" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ejercicios.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="21" column="14" lean-forward="false" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/googletest-master/googletest/make/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="471">
+          <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/silenciosTEST.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+=======
     <entry file="file://$PROJECT_DIR$/datos/habla_spkr0.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
@@ -886,10 +1305,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="367">
           <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+>>>>>>> master
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/tests/grabacionValidaTEST.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+=======
 <<<<<<< HEAD
     <entry file="file://C:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/lib/gcc/x86_64-w64-mingw32/7.1.0/include/c++/bits/stl_vector.h" />
     <entry file="file://$PROJECT_DIR$/definiciones.h">
@@ -901,14 +1327,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+>>>>>>> master
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/tests/flashElPerezosoTEST.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-734">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+=======
     <entry file="file://$PROJECT_DIR$/lib/googletest-master/googletest/include/gtest/internal/gtest-port.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="2388" column="71" lean-forward="true" selection-start-line="2388" selection-start-column="71" selection-end-line="2388" selection-end-column="71" />
+>>>>>>> master
           <folding>
             <element signature="e#0#30#0" expanded="false" />
             <element signature="e#2258#2290#0" expanded="false" />
@@ -963,10 +1397,135 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tests/elAcaparadorTEST.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/ardillizarTEST.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-140">
+          <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Funciones_TPI.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+          <folding>
+            <element signature="e#42#61#0" expanded="false" />
+            <element signature="e#557#1573#0" expanded="false" />
+            <element signature="e#1576#1954#0" expanded="false" />
+            <element signature="e#1956#2379#0" expanded="false" />
+            <element signature="e#2381#2832#0" expanded="false" />
+            <element signature="e#2834#3065#0" expanded="false" />
+            <element signature="e#3067#3575#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/definiciones.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="11" column="11" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/distanciasTEST.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1242">
+          <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+          <folding>
+            <element signature="e#1#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datos/habla_spkr1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datos/habla_spkr0.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="432">
+          <caret line="16" column="36" lean-forward="true" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/solucion.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="37" lean-forward="false" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+          <folding>
+            <element signature="e#113#136#0" expanded="true" />
+            <element signature="e#263#578#0" expanded="false" />
+            <element signature="e#699#989#0" expanded="false" />
+            <element signature="e#990#1300#0" expanded="false" />
+            <element signature="e#1301#1383#0" expanded="false" />
+            <element signature="e#1384#1459#0" expanded="false" />
+            <element signature="e#1460#1542#0" expanded="false" />
+            <element signature="e#1543#1727#0" expanded="false" />
+            <element signature="e#1728#1931#0" expanded="false" />
+            <element signature="e#1932#2129#0" expanded="false" />
+            <element signature="e#2130#2235#0" expanded="false" />
+            <element signature="e#2237#2702#0" expanded="false" />
+            <element signature="e#2704#3352#0" expanded="false" />
+            <element signature="e#3353#3587#0" expanded="false" />
+            <element signature="e#3589#4298#0" expanded="false" />
+            <element signature="e#4299#4350#0" expanded="false" />
+            <element signature="e#4351#4647#0" expanded="false" />
+            <element signature="e#4649#5689#0" expanded="false" />
+            <element signature="e#6913#7327#0" expanded="false" />
+            <element signature="e#7329#7516#0" expanded="false" />
+            <element signature="e#7519#7955#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/encontrarAparicionTEST.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="21" column="38" lean-forward="false" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Funciones_TPI.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/funcionesAuxiliares.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+=======
         <state relative-caret-position="306">
           <caret line="18" column="53" lean-forward="false" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
+>>>>>>> master
           <folding />
         </state>
       </provider>
