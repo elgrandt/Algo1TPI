@@ -17,6 +17,10 @@ lista_intervalos silencios(audio s, int prof, int freq, int umbral);
 bool hayQuilombo(sala m, int prof, int freq, int umbral);
 locutor medirLaDistancia(sala m, audio frase, int freq, int prof);
 int encontrarAparicion(audio target , audio s);
-audio sinSilencios(audio s, lista_intervalos sil, int freq, int prof, int umbral);
+float compararSilencios(audio vec, int freq, int prof, int locutor, int umbralSilencio);
+float resultadoFinal(sala m, int freq, int prof, int umbralSilencio);
+locutor medirLaDistancia(sala m, audio frase, int freq, int prof);
+int encontrarMejorUmbralFuerzaBruta(sala m, int freq, int prof);
+
 
 #endif //SALADEREUNION_EJERCICIOS_H

@@ -8,6 +8,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/salaDeReunion.dir/tests/encontrarAparicionTEST.obj"
   "CMakeFiles/salaDeReunion.dir/tests/ardillizarTEST.obj"
   "CMakeFiles/salaDeReunion.dir/tests/silenciosTEST.obj"
+  "CMakeFiles/salaDeReunion.dir/tests/flashElPerezosoTEST.obj"
   "../salaDeReunion.pdb"
   "../salaDeReunion.exe"
   "../salaDeReunion.exe.manifest"

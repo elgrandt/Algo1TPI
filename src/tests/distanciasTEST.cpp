@@ -7,7 +7,7 @@
 #include <string>
 
 using namespace std;
-/*
+
 TEST(distanciasTEST, subaudioLongitud) {
     audio v = {1,2,3,4,5,6};
     audio v2 = subAudio(v,2,2);
@@ -45,7 +45,8 @@ TEST(distanciasTEST, lecturaAudio) {
     EXPECT_EQ(duracion, 120);
     EXPECT_EQ(duracion, spk0.size()/frecuencia);
 }
-*/
+
+
 TEST(distanciasTEST, testBEEP) {
     int frecuencia, profundidad,duracion;
     int startPOINT, endPOINT;
@@ -72,6 +73,7 @@ TEST(distanciasTEST, testBEEP) {
     }
     EXPECT_EQ(1,get<0>(spk));
 }
+
 
 TEST(distanciasTEST, leerSala) {
     int frecuencia, profundidad,duracion;

@@ -2,6 +2,7 @@
 
 #include "ejercicios.h"
 #include "Funciones_TPI.h"
+#include <algorithm>
 #include "math.h"
 #include "definiciones.h"
 #include "funcionesAuxiliares.h"
@@ -92,8 +93,6 @@ int abs(int a) {
     return b;
 }
 
-
-
 /************************** EJERCICIO elAcaparador **************************/
 int elAcaparador(sala m, int freq, int prof){
     //recorremos cada persona y buscamos la que tiene la max intensidad media.
@@ -135,24 +134,41 @@ void agregarLasPares(audio &res, audio mi) {//meto en sec de r(matriz) las cosas
 
 /************************** EJERCICIO flashElPerezoso **************************/
 sala flashElPerezoso(sala m, int prof, int freq){
-    sala res(m.size(), vector<int>((2*m.size())-1,0));
-    int i = 0;
+    int l = (2*m[0].size()) - 1;
+    sala res(m.size(), vector<int>(l,0));
+    int i = 0,j;
     while(i < m.size()) {//recorro a cada persona para sacar sus elementos y meterlos en res
         //y ademas meter en el medio el promedio de dos elem consecutivos de m[i] (la persona)
         interPolar(res[i], m[i]);
+        i++;
     }
 
+    i= 0;
+    j=0;
+    /*cout << "Matriz SALIDA:"<<endl;
+    while(i < res.size()) {
+        while(j < res[i].size()) {
+            cout << res[i][j]<< " ";
+            j++;
+        }
+        i++;
+        cout <<endl;
+    }*/
     return res;
 }
 int prom(int a, int b) {
-    return (a+b)/2;
+    return (int)(a+b)/2;
 }
 void interPolar(audio &resi, audio mi) {
     int i = 0;
-    while(i < mi.size()-1) {
+    while(i < mi.size()) {
         //impares son elementos ficticios, pares los saco de mi
         resi[2*i] = mi[i];
-        resi[(2*i)+1] = prom(mi[i], mi[i+1]);
+        i++;
+    }
+    i=0;
+    while(i < mi.size()-1) {
+        resi[(2*i)+1] = prom(mi[i],mi[i+1]);
         i++;
     }
 }
@@ -160,24 +176,30 @@ void interPolar(audio &resi, audio mi) {
 /************************** EJERCICIO silencios **************************/
 lista_intervalos silencios(audio s, int prof, int freq, int umbral){
     lista_intervalos res;
-
-    const int indicesMinimos = floor(0.1 * freq);
-    for (int x = 0; x < s.size() - indicesMinimos; x++){
-        intervalo silencioActual = {float(x)/freq, -1};
+    float tiempoMinimo = 0.1;
+    int indicesMinimos = (tiempoMinimo * freq);
+    int x = 0;
+    while( x < s.size() - indicesMinimos){
+        float end = -1;
         for (int y = x; y < s.size(); y++){
             if (abs(s[y]) < umbral){
                 if (y - x >= indicesMinimos){
+                    if (y == s.size()-1){
+                        end = float(y)/freq;
+                        break;
+                    }
                     // Es y+1 porque el silencio cuenta hasta exactamente el instante en que supera el umbral porque asi lo dice el caso de ejemplo dado
-                    get<1>(silencioActual) = float(y+1)/freq;
+                    end = float(y+1)/freq;
                 }
             }else{
                 break;
             }
         }
-        if (get<1>(silencioActual) != -1){
-            res.push_back(silencioActual);
-            x = int(get<1>(silencioActual) * freq);
+        if (end != -1){
+            res.push_back(make_tuple(float(x)/freq,end));
+            x = int(end * freq);
         }
+        x++;
     }
 
     return res;
@@ -208,12 +230,103 @@ bool hayQuilombo(sala m, int prof, int freq, int umbral){
     }
     return false;
 }
-/************************** EJERCICIO sacarPausas **************************/
-audio sacarPausas(audio s, lista_intervalos sil, int freq, int prof, int umbral) {
-    audio result;
-    return result;
+
+/* EJERCICIOS DIFICILES DYLAN */
+
+//FUNCION DIFICILES DYLAN B)
+vector<bool> enmascarar(lista_intervalos ints, float duracion){
+    vector<bool> res(int(100*duracion), false);
+    for (int x = 0; x < ints.size(); x++){
+        int cota = ((ceil(get<1>(ints[x])*100)) < res.size()) ? (ceil(get<1>(ints[x])*100)) : res.size();
+        for (int y = ceil(get<0>(ints[x])*100); y < cota; y++){
+            res[y] = true;
+        }
+    }
+    return res;
 }
 
+//FUNCION DIFICILES DYLAN C)
+vector<bool> negacionLogica(vector<bool> mascara){
+    for (int x = 0; x < mascara.size(); x++){
+        mascara[x] = !mascara[x];
+    }
+    return mascara;
+}
+
+
+lista_intervalos leerIntervalosDeHabla(int locutor){
+    ifstream lector;
+    lector.open("datos/habla_spkr"+to_string(locutor)+".txt");
+    lista_intervalos intervalos;
+    while (!lector.eof()) {
+        intervalo act;
+        lector >> get<0>(act) >> get<1>(act);
+        if (!(get<0>(act) == 0 && get<1>(act))) { // Verificacion por ultima linea en blanco
+            intervalos.push_back(act);
+        }
+    }
+    lector.close();
+}
+
+//FUNCION DIFICILES DYLAN A)
+float compararSilencios(audio vec, int freq, int prof, int locutor, int umbralSilencio){
+    lista_intervalos intervalos = leerIntervalosDeHabla(locutor);
+    vector<bool> mascara = enmascarar(intervalos,float(vec.size())/freq);
+    vector<bool> silenciosXarchivo = negacionLogica(mascara);
+    lista_intervalos sil = silencios(vec,prof,freq,umbralSilencio);
+    vector<bool> silenciosXfuncion = enmascarar(sil, float(vec.size())/freq);
+
+    int vp = 0,vn = 0,fp = 0,fn = 0;
+    for (int x = 0; x < silenciosXfuncion.size(); x++){
+        if (silenciosXfuncion[x]){
+            if (silenciosXarchivo[x]){
+                vp++;
+            }else{
+                fp++;
+            }
+        }else{
+            if (silenciosXarchivo[x]){
+                fn++;
+            }else{
+                vn++;
+            }
+        }
+    }
+    float precision = float(vp)/(vp+fp), recall = float(vp)/(vp+fn);
+    float F1 = 2* ((precision*recall) / (precision+recall));
+    return F1;
+}
+
+float resultadoFinal(sala m, int freq, int prof, int umbralSilencio){
+    float suma = 0;
+    for (int x = 0; x < m.size(); x++){
+        float act = compararSilencios(m[x],freq,prof,x,umbralSilencio);
+        //printf("El audio %i tiene un F1 de: %f\n",x,act);
+        suma += act;
+    }
+    return suma / m.size();
+}
+
+int encontrarMejorUmbralFuerzaBruta(sala m, int freq, int prof){
+    int maximo = 0;
+    for (int x = 0; x < m.size(); x++){
+        maximo = max(maximo, *max_element(begin(m[x]), end(m[x])));
+    }
+    pair<int,float> mejorUmbral = {-1,0}; // Actual mejor, Puntaje del actual mejor
+    for (int x = 1; x < maximo; x++){
+        cout << x << endl;
+        float act = resultadoFinal(m, freq, prof, x);
+        if (mejorUmbral.first == -1 || mejorUmbral.second < act){
+            mejorUmbral.first = x;
+            mejorUmbral.second = act;
+        }
+    }
+    cout << mejorUmbral.first << ", " << mejorUmbral.second << endl;
+}
+
+/********************* FIN EJERCICIOS DIFICILES DYLAN **********************/
+
+/************************ EJERCICIO DIFICIL LICHA *****************************************/
 /************************** EJERCICIO encontrarAparicion **************************/
 int encontrarAparicion(audio s , audio target){
     return calcularMaximaCorrelacion(s,target);
@@ -235,20 +348,12 @@ int calcularMaximaCorrelacion(audio personai, audio frase) {
 }
 
 bool esMaximaCorrelacion(audio personai, int startPoint, audio frase){
-    //int j = startPoint+1;
     int maxCor = calcularMaximaCorrelacion(personai,frase);
-    /*int largo = personai.size(), largo2=frase.size();
-    while(j < largo-largo2){
-        cout << "AHORA j VALE: " << j<<endl;
-        if((correlacion(subseq(personai,j,j+largo2+1), frase) > correlacion(subseq(personai,startPoint,1+startPoint+largo2), frase))) {
-            esMaxima = false;
-            break;
-        }
-        j++;
-    }*/
     return (correlacion(subseq(personai,maxCor,frase.size()+1+maxCor),frase) == correlacion(subseq(personai,startPoint,startPoint+frase.size()+1), frase));
 }
+/************************** FIN EJERCICIO DIFICIL LICHA **************************/
 
+/************************** EJERCICIO DIFICIL DIEGO  **************************/
 /************************** EJERCICIO medirLaDistancia **************************/
 locutor medirLaDistancia(sala m, audio frase, int freq, int prof){
     locutor out;
@@ -264,7 +369,7 @@ locutor medirLaDistancia(sala m, audio frase, int freq, int prof){
         i++;
     } //aca ya consegui la posicion del locutor que dijo la frase
     get<0>(out) = posMax;
-    //ahora armo la listas con las distancias al locutor
+    //ahora armo la listas asignando las distancias al locutor
     asignarDistanciasALocutores(out,frase,m,freq);
 
     return out;
@@ -275,35 +380,15 @@ void asignarDistanciasALocutores(locutor &out, audio frase, sala m, int freq) {
     while(i < m.size()) {
         get<1>(out).push_back(abs((comienzoCorrelacion(m[i],frase))-(comienzoCorrelacionLocutorDijoFrase)) * VELOCIDAD_SONIDO / freq);
         i++;
-        cout << "YA ORDENE PERSONA : " << i << " y faltan " << m.size()-i<<endl;
+        //cout << "YA ORDENE PERSONA : " << i << " y faltan " << m.size()-i<<endl;
     }
 }
 int comienzoCorrelacion(audio personai, audio frase){
-    /*int i = 0, acumCorrelacion = 0;
-    while(i < personai.size()-frase.size()) {
-        if(esMaximaCorrelacion(personai,i,frase)) {
-            acumCorrelacion+=i;
-            break;
-        }
-        i++;
-    }*/
     return calcularMaximaCorrelacion(personai, frase);
 }
 float intensidadCorrelacion(audio personai, audio frase) {
-    /*int i = 0;
-    float intCor = 0;
-    while(i < personai.size()-frase.size()) {
-        int m = calcularMaximaCorrelacion(personai, frase);
-        if(esMaximaCorrelacion(personai,i,frase)) {
-            intCor += calcularIntensidadMedia(subseq(personai,i,i+frase.size()));
-            break;
-        }
-        i++;
-    }*/
     int p = calcularMaximaCorrelacion(personai, frase);
     return calcularIntensidadMedia(subseq(personai,p,p+1+frase.size()));
 }
 
-
-audio sinSilencio ( audio vec , int freq , int prof, int umbral) {
-}
+/************************** FIN EJERCICIO DIFICIL DIEGO  **************************/

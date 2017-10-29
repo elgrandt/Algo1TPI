@@ -326,6 +326,21 @@ tests/encontrarAparicionTEST.s:
 .PHONY : tests/encontrarAparicionTEST.s
 
 # target to build an object file
+tests/flashElPerezosoTEST.obj:
+	$(MAKE) -f CMakeFiles\salaDeReunion.dir\build.make CMakeFiles/salaDeReunion.dir/tests/flashElPerezosoTEST.obj
+.PHONY : tests/flashElPerezosoTEST.obj
+
+# target to preprocess a source file
+tests/flashElPerezosoTEST.i:
+	$(MAKE) -f CMakeFiles\salaDeReunion.dir\build.make CMakeFiles/salaDeReunion.dir/tests/flashElPerezosoTEST.i
+.PHONY : tests/flashElPerezosoTEST.i
+
+# target to generate assembly for a file
+tests/flashElPerezosoTEST.s:
+	$(MAKE) -f CMakeFiles\salaDeReunion.dir\build.make CMakeFiles/salaDeReunion.dir/tests/flashElPerezosoTEST.s
+.PHONY : tests/flashElPerezosoTEST.s
+
+# target to build an object file
 tests/grabacionValidaTEST.obj:
 	$(MAKE) -f CMakeFiles\salaDeReunion.dir\build.make CMakeFiles/salaDeReunion.dir/tests/grabacionValidaTEST.obj
 .PHONY : tests/grabacionValidaTEST.obj
@@ -393,6 +408,9 @@ help:
 	@echo ... tests/encontrarAparicionTEST.obj
 	@echo ... tests/encontrarAparicionTEST.i
 	@echo ... tests/encontrarAparicionTEST.s
+	@echo ... tests/flashElPerezosoTEST.obj
+	@echo ... tests/flashElPerezosoTEST.i
+	@echo ... tests/flashElPerezosoTEST.s
 	@echo ... tests/grabacionValidaTEST.obj
 	@echo ... tests/grabacionValidaTEST.i
 	@echo ... tests/grabacionValidaTEST.s

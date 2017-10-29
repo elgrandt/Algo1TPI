@@ -333,6 +333,8 @@ ejercicios.h
 C:/Users/Diego/Documents/Facultad/Algoritmos/Labo/TP_Implementacion/salaDeReuniones_TPI/src/ejercicios.h
 Funciones_TPI.h
 C:/Users/Diego/Documents/Facultad/Algoritmos/Labo/TP_Implementacion/salaDeReuniones_TPI/src/Funciones_TPI.h
+algorithm
+-
 math.h
 C:/Users/Diego/Documents/Facultad/Algoritmos/Labo/TP_Implementacion/salaDeReuniones_TPI/src/math.h
 definiciones.h
@@ -371,6 +373,18 @@ gtest/gtest.h
 C:/Users/Diego/Documents/Facultad/Algoritmos/Labo/TP_Implementacion/salaDeReuniones_TPI/src/tests/gtest/gtest.h
 
 C:/Users/Diego/Documents/Facultad/Algoritmos/Labo/TP_Implementacion/salaDeReuniones_TPI/src/tests/encontrarAparicionTEST.cpp
+../Funciones_TPI.h
+C:/Users/Diego/Documents/Facultad/Algoritmos/Labo/TP_Implementacion/salaDeReuniones_TPI/src/Funciones_TPI.h
+../ejercicios.h
+C:/Users/Diego/Documents/Facultad/Algoritmos/Labo/TP_Implementacion/salaDeReuniones_TPI/src/ejercicios.h
+gtest/gtest.h
+C:/Users/Diego/Documents/Facultad/Algoritmos/Labo/TP_Implementacion/salaDeReuniones_TPI/src/tests/gtest/gtest.h
+iostream
+-
+string
+-
+
+C:/Users/Diego/Documents/Facultad/Algoritmos/Labo/TP_Implementacion/salaDeReuniones_TPI/src/tests/flashElPerezosoTEST.cpp
 ../Funciones_TPI.h
 C:/Users/Diego/Documents/Facultad/Algoritmos/Labo/TP_Implementacion/salaDeReuniones_TPI/src/Funciones_TPI.h
 ../ejercicios.h

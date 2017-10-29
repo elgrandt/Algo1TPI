@@ -20,6 +20,6 @@ int prom(int a, int b);
 float intensidadCorrelacion(audio a, audio frase);
 int comienzoCorrelacion(audio a, audio frase);
 void asignarDistanciasALocutores(locutor &out, audio frase, sala m,int freq);
-bool esMaximaCorrelacion(audio a, int startPoint, audio frase);//no la estoy usando
+bool esMaximaCorrelacion(audio a, int startPoint, audio frase);
 int calcularMaximaCorrelacion(audio personai, audio frase);
 #endif //SALADEREUNION_FUNCIONESAUXILIARES_H
