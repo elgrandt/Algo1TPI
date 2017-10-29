@@ -12,7 +12,7 @@ float duracion(audio s, int freq);
 float enSegundos(int n, int freq);
 int calcularIntensidadMedia(audio persona);
 int abs(int a);
-bool sonTodosCeros(vector<int> v);
+bool sonTodosCeros(vector<int>v);
 vector<int> subseq(audio s, int inicio, int fin);
 void agregarLasPares(audio &res, audio mi);
 void interPolar(audio &a, audio a0);
