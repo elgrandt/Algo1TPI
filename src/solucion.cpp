@@ -157,17 +157,6 @@ sala ardillizar(sala m, int prof, int freq){
 void agregarLasPares(audio &res, audio mi) {
     //meto en sec de r(matriz) las cosas en las pos pares de m
     int i = 0;
-    while(i < mi.size()) {
-        if(i % 2 == 0) {
-            res.push_back(mi[i]);
-        }
-        i++;
-    }
-}
-
-void agregarLasPares(audio &res, audio mi) {
-    //meto en sec de r(matriz) las cosas en las pos pares de m
-    int i = 0;
 
     while(i < mi.size()) {
 
@@ -208,21 +197,6 @@ void interPolar(audio &resi, audio mi) {
     i=0;
     while(i < mi.size()-1) {
         resi[(2*i)+1] = prom(mi[i],mi[i+1]);
-        i++;
-    }
-}
-
-int prom(int a, int b) {
-    return (a+b)/2;
-}
-
-void interPolar(audio &resi, audio mi) {
-    int i = 0;
-
-    while(i < mi.size()-1) {
-        //impares son elementos ficticios, pares los saco de mi
-        resi[2*i] = mi[i];
-        resi[(2*i)+1] = prom(mi[i], mi[i+1]);
         i++;
     }
 }
@@ -358,19 +332,6 @@ float resultadoFinal(sala m, int freq, int prof, int umbralSilencio){
         suma += act;
     }
     return suma / m.size();
-}
-
-bool hayQuilombo(sala m, int prof, int freq, int umbral){
-    for (int x = 0; x < m.size()-1; x++){
-        for (int y = x+1; y  < m.size(); y++){
-            for (int z = 0; z < m[x].size(); z++) {
-                if (!(estaEnSilencio(m[x], z, prof, freq, umbral) || estaEnSilencio(m[y], z, prof, freq, umbral))) {
-                    return true;
-                }
-            }
-        }
-    }
-    return false;
 }
 
 int encontrarMejorUmbralFuerzaBruta(sala m, int freq, int prof){
