@@ -1,3 +1,0 @@
-C:/Users/Diego/Documents/Facultad/Algoritmos/Labo/TP_Implementacion/salaDeReuniones_TPI/cmake-build-debug/CMakeFiles/salaDeReuniones_TPI.dir
-C:/Users/Diego/Documents/Facultad/Algoritmos/Labo/TP_Implementacion/salaDeReuniones_TPI/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Diego/Documents/Facultad/Algoritmos/Labo/TP_Implementacion/salaDeReuniones_TPI/cmake-build-debug/CMakeFiles/rebuild_cache.dir
