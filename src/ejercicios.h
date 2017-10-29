@@ -16,6 +16,7 @@ sala flashElPerezoso(sala m, int prof, int freq);
 lista_intervalos silencios(audio s, int prof, int freq, int umbral);
 bool hayQuilombo(sala m, int prof, int freq, int umbral);
 locutor medirLaDistancia(sala m, audio frase, int freq, int prof);
-int encontrarAparicion(audio x, audio y);
+int encontrarAparicion(audio target , audio s);
+audio sinSilencios(audio s, lista_intervalos sil, int freq, int prof, int umbral);
 
 #endif //SALADEREUNION_EJERCICIOS_H

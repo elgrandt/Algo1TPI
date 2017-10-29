@@ -17,11 +17,12 @@ TEST(encontrarAparicionTEST, smallEncontrarAparicion) {
 TEST(encontrarAparicionTEST, encontrarAparicion) {
     int frecuencia, profundidad,duracion;
     int startPOINT, endPOINT;
-    audio pzm = leerVectorAudio("datos/pzm.dat",frecuencia,profundidad,duracion);
-    audio frase = subAudio(pzm,POS_SMP_TEST_DISTANCIA,QUANT_SMP_TEST_DISTNACIA);
+    string n1 = "datos/pzm.dat", n2 = "datos/spkr1.dat";
+    audio pzm = leerVectorAudio(n1,frecuencia,profundidad,duracion);
+    audio frase = subAudio(pzm,POS_SMP_TEST_DISTANCIA,QUANT_SMP_TEST_DISTANCIA);
     startPOINT = POS_SMP_TEST_DISTANCIA - 3000;
-    endPOINT = QUANT_SMP_TEST_DISTNACIA + 2 * 3000;
-    audio speaker = leerVectorAudio("datos/spkr1.dat",frecuencia,profundidad,duracion);
+    endPOINT = QUANT_SMP_TEST_DISTANCIA + 2 * 3000;
+    audio speaker = leerVectorAudio(n2,frecuencia,profundidad,duracion);
     int posMxCrr = encontrarAparicion(subAudio(speaker,startPOINT,endPOINT),frase);
     EXPECT_EQ(3854,posMxCrr);
 }
