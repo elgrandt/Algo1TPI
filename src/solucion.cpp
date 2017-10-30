@@ -282,7 +282,6 @@ vector<bool> negacionLogica(vector<bool> mascara){
     return mascara;
 }
 
-
 lista_intervalos leerIntervalosDeHabla(int locutor){
     ifstream lector;
     lector.open("datos/habla_spkr"+to_string(locutor)+".txt");
@@ -400,8 +399,16 @@ int calcularMaximaCorrelacion(audio personai, audio frase) {
     int i = 0, posMax = i;
     float temp;
     float maxCor = correlacion(subseq(personai, i,i+frase.size()+1),frase);
+    vector< vector<int> > subsecuencias(personai.size() - frase.size() + 1, vector<int>(frase.size(), 0));
+    int x = 0;
+    while(x < personai.size()){
+        for (int y = max(0,x-int(frase.size())+1); y < min(int(subsecuencias.size()),x+1); y++){
+            subsecuencias[y][x-y] = personai[x];
+        }
+        x++;
+    }
     while(i < personai.size()-frase.size()) {
-        temp = correlacion(subseq(personai, i,i+frase.size()+1),frase);
+        temp = correlacion(subsecuencias[i],frase);
         if(maxCor < temp) {
             maxCor = temp;
             posMax = i;
@@ -409,11 +416,6 @@ int calcularMaximaCorrelacion(audio personai, audio frase) {
         i++;
     }
     return posMax;
-}
-
-bool esMaximaCorrelacion(audio personai, int startPoint, audio frase){
-    int maxCor = calcularMaximaCorrelacion(personai,frase);
-    return (correlacion(subseq(personai,maxCor,frase.size()+1+maxCor),frase) == correlacion(subseq(personai,startPoint,startPoint+frase.size()+1), frase));
 }
 
 /************************** EJERCICIO medirLaDistancia **************************/

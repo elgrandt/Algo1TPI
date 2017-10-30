@@ -10,7 +10,7 @@ TEST(sinSilenciosTEST, testDeSilencio1){
     int freq = 25;
     int umbral = 1;
     audio a = {0,0,0,0,0,0,0,0,0,6,2,3,0,0,0,0,0,10,6,0,0,3};
-    audio res = {2, 3, 6, 0, 0, 3};
+    audio res = {6, 2, 3, 10, 6, 0, 0, 3};
     audio  sinSilen = sinSilencios(a, silencios(a, prof, freq, umbral), freq, prof, umbral);
 
     std::cout << "sinSilen = {";
@@ -28,7 +28,7 @@ TEST(sinSilenciosTEST, testDeSilencio2){
     int freq = 45;
     int umbral = 1;
     audio a = {10,12,35,44,35,42,55,78,0,2,3,4,0,0,0,0,0,0,10,14,11};
-    audio res = {10,12,35,44,35,42,55,78,0,2,3,4,0,14,11};
+    audio res = {10,12,35,44,35,42,55,78,0,2,3,4,0,10,14,11};
     audio  sinSilen = sinSilencios(a, silencios(a, prof, freq, umbral), freq, prof, umbral);
 
     std::cout << "sinSilen = {";
