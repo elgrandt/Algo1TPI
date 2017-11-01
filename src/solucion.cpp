@@ -34,7 +34,6 @@ bool enRango(audio s, int prof) {
 
         i++;
     }
-
     return enRango;
 }
 
@@ -45,7 +44,7 @@ bool micFunciona(audio s, int freq) {
     while(i < s.size()) {
         int j = i+freq;
 
-        if(sonTodosCeros(subseq(s,i,j)) && duraMasDe(1.0,subseq(s,i,j), freq)) {
+        if(sonTodosCeros(subseq(s,i,j))) {
             funciona = false;
             break;
         }
@@ -94,30 +93,7 @@ bool sonTodosCeros(vector<int> v) {
     return (cantCeros == v.size());
 }
 
-int calcularIntensidadMedia(audio persona) {
-    int i = 0;
-    int acum = 0;
 
-    while(i < persona.size()) {
-        acum += abs(persona[i]);
-        i++;
-    }
-
-    return (acum/persona.size());
-}
-
-int abs(int a) {
-    int b;
-
-    if(a<0){
-        b = -a;
-    }
-    else{
-        b = a;
-    }
-
-    return b;
-}
 
 /************************** EJERCICIO elAcaparador **************************/
 int elAcaparador(sala m, int freq, int prof){
@@ -133,6 +109,34 @@ int elAcaparador(sala m, int freq, int prof){
     }
 
     return posMax;
+}
+
+
+/*
+int abs(int a) {
+    int b;
+
+    if(a<0){
+        b = -a;
+    }
+    else{
+        b = a;
+    }
+
+    return b;
+}
+*/
+
+int calcularIntensidadMedia(audio persona) {
+    int i = 0;
+    int acum = 0;
+
+    while(i < persona.size()) {
+        acum += abs(persona[i]);
+        i++;
+    }
+
+    return (acum/persona.size());
 }
 
 /************************** EJERCICIO ardillizar **************************/
@@ -242,7 +246,7 @@ bool estaEnSilencio(audio a, int pos, int prof, int freq, int umbral){
     lista_intervalos s = silencios(a,prof,freq,umbral);
     for (int x = 0; x < s.size(); x++){
         // Si s1 <= pos < s2 donde s1 y s2 son las posiciones correspondientes a los tiempos obtenidos en la funcion anterior
-        if (round(get<0>(s[x]) * freq) <= pos && pos < round(get<1>(s[x]) * freq)) {
+        if (round(get<0>(s[x]) * freq) <= pos && ((pos < round(get<1>(s[x]) * freq)) || (pos == a.size()-1 && pos == round(get<1>(s[x]) * freq)))) {
             return true;
         }
     }
@@ -262,7 +266,7 @@ bool hayQuilombo(sala m, int prof, int freq, int umbral){
     return false;
 }
 
-/*********************** EJERCICIO comprarSilencios ************************/
+/*********************** EJERCICIO compararSilencios ************************/
 
 vector<bool> enmascarar(lista_intervalos ints, float duracion){
     vector<bool> res(int(100*duracion), false);
@@ -294,6 +298,7 @@ lista_intervalos leerIntervalosDeHabla(int locutor){
         }
     }
     lector.close();
+    return intervalos;
 }
 
 float compararSilencios(audio vec, int freq, int prof, int locutor, int umbralSilencio){
@@ -333,7 +338,7 @@ float resultadoFinal(sala m, int freq, int prof, int umbralSilencio){
     return suma / m.size();
 }
 
-int encontrarMejorUmbralFuerzaBruta(sala m, int freq, int prof){
+/*int encontrarMejorUmbralFuerzaBruta(sala m, int freq, int prof){
     int maximo = 0;
     for (int x = 0; x < m.size(); x++){
         maximo = max(maximo, *max_element(begin(m[x]), end(m[x])));
@@ -348,7 +353,7 @@ int encontrarMejorUmbralFuerzaBruta(sala m, int freq, int prof){
         }
     }
     cout << mejorUmbral.first << ", " << mejorUmbral.second << endl;
-}
+}*/
 
 /************************** EJERCICIO sinSilencios **************************/
 
@@ -370,23 +375,6 @@ audio sinSilencios(audio vec , vector<intervalo> listaDeSilencios, int freq , in
     }
 
     return audioSinSilencios;
-}
-
-bool indicePerteneceASilencio(int indice, vector<intervalo> listaDeSilencios, int freq){
-    bool pertenece = false;
-
-    int cont = 0;
-
-    while(cont < listaDeSilencios.size()){
-        if(indice >= (get<0>(listaDeSilencios[cont]) * freq) && indice < (get<1>(listaDeSilencios[cont]) * freq)){
-            pertenece = true;
-            break;
-        }
-
-        cont++;
-    }
-
-    return pertenece;
 }
 
 /************************** EJERCICIO encontrarAparicion **************************/

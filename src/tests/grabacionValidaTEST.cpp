@@ -17,6 +17,23 @@ TEST(grabacionValidaTEST, unaValida) {
 TEST(grabacionValidaTEST, otraValida) {
     int freq = 12;
     int prof = 32;
-    audio a = {1,2,3,4,5,6,1,2,3,4,5,6,1,2,3,4,5,6};
-    EXPECT_EQ(true,grabacionValida(a,32,12));
+    audio a = {1,2,3,4,-5,6,1,2,3,4,5,6,1,2,3,4,5,6};
+    EXPECT_EQ(true,grabacionValida(a,prof,freq));
 }
+
+TEST(grabacionValidaTEST, FueraDeRango){
+    int freq = 12;
+    int prof = 16;
+
+    audio a = {1,2,3,int (pow(2,17))};
+    EXPECT_EQ(false, grabacionValida(a,prof,freq));
+}
+
+TEST(grabacionValidaTEST, MicrofonoNoFunciona){
+    int freq = 4;
+    int prof = 16;
+
+    audio a = {0,0,0,0,0,0,0,0,0,0,1,2,3,4};
+    EXPECT_EQ(false, grabacionValida(a,prof,freq));
+}
+
