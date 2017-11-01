@@ -242,7 +242,7 @@ bool estaEnSilencio(audio a, int pos, int prof, int freq, int umbral){
     lista_intervalos s = silencios(a,prof,freq,umbral);
     for (int x = 0; x < s.size(); x++){
         // Si s1 <= pos < s2 donde s1 y s2 son las posiciones correspondientes a los tiempos obtenidos en la funcion anterior
-        if (get<0>(s[x]) * freq <= pos && pos < get<1>(s[x]) * freq) {
+        if (round(get<0>(s[x]) * freq) <= pos && pos < round(get<1>(s[x]) * freq)) {
             return true;
         }
     }
@@ -362,7 +362,7 @@ audio sinSilencios(audio vec , vector<intervalo> listaDeSilencios, int freq , in
 
     while(i < vec.size()){
         //*/
-        if(!indicePerteneceASilencio(i, listaDeSilencios, freq)){
+        if(!estaEnSilencio(vec, i, prof, freq, umbral)){
             audioSinSilencios.push_back(vec[i]);
         }
 
@@ -448,6 +448,7 @@ void asignarDistanciasALocutores(locutor &out, audio frase, sala m, int freq) {
     int comienzoCorrelacionLocutorDijoFrase = comienzoCorrelacion(m[get<0>(out)], frase);
     while(i < m.size()) {
         get<1>(out).push_back(abs((comienzoCorrelacion(m[i],frase))-(comienzoCorrelacionLocutorDijoFrase)) * VELOCIDAD_SONIDO / freq);
+        i++;
     }
 }
 
