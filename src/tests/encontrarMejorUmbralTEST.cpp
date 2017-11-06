@@ -1,4 +1,4 @@
-#include "../Funciones_TPI.h"
+/*#include "../Funciones_TPI.h"
 #include "../ejercicios.h"
 
 #include "gtest/gtest.h"

@@ -7,6 +7,19 @@
 
 using namespace std;
 
+
+TEST(flashElPerezosoTEST, lecturaAudio) {
+    string nombre = "datos/spkr0.dat";
+    int frecuencia, profundidad,duracion;
+    audio spk0 = leerVectorAudio(nombre,frecuencia,profundidad,duracion);
+    grabarVectorAudio(spk0, "pruebaAudio.txt");
+    sala m = {spk0};
+    grabarVectorAudio(flashElPerezoso(m,profundidad,frecuencia)[0],"pruebaAudioPerezoso.txt");
+    
+    EXPECT_EQ(duracion, 120);
+    EXPECT_EQ(duracion, spk0.size()/frecuencia);
+}
+
 TEST(flashElPerezosoTEST, audioImPar) {
     int prof = 16;
     int freq = 4;

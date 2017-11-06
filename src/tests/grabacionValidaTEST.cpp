@@ -71,6 +71,18 @@ TEST(grabacionValidaTEST, SilAlFinalMas1Seg) {
     audio a = {4,2,6,3,0,0,0,0,5,2,0,0,0,0,0};
     EXPECT_EQ(false, grabacionValida(a,prof,freq));
 }
+TEST(grabacionValidaTEST, SilAlFinalDistFreqNoValido) {
+    int freq = 12;
+    int prof = 16;
+    audio a = {4,2,6,3,0,0,0,0,5,2,0,0,0,0,0,0,0,0,0,0,0,0,7,0};
+    EXPECT_EQ(true, grabacionValida(a,prof,freq));
+}
+TEST(grabacionValidaTEST, SilAlFinalDistFreqValido) {
+    int freq = 12;
+    int prof = 16;
+    audio a = {4,2,6,3,0,0,0,0,5,2,0,0,0,0,0,0,0,0,0,0,0,0,0};
+    EXPECT_EQ(false, grabacionValida(a,prof,freq));
+}
 
 TEST(grabacionValidaTEST, UnSoloSilDe1Seg) {
     int freq = 4;
