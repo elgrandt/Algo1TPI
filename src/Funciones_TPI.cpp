@@ -57,7 +57,7 @@ audio leerVectorAudio(string nombreArchivo, int& frecuencia, int& profundidad, i
             cout << "Archivo vacio." << endl;
     }
     else
-        cout << "Error leyendo el archivo." << nombreArchivo.c_str() <<endl;
+        cout << "Error leyendo el archivo." << endl;
 
     miArchivo.close();
     return vec;
@@ -115,7 +115,7 @@ audio subAudio(audio in, int ini, int longitud) {
 float correlacion(audio x, audio y) {
     int y_nelem = y.size();
     float x_media, y_media, x_std, y_std;
-    float corr;
+    float corr = 0;
     // actualizo los estadisticos de la seccion de x
     calcularEstadisticos(x,x_media,x_std);
     calcularEstadisticos(y,y_media,y_std);

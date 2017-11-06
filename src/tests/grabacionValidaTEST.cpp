@@ -33,7 +33,48 @@ TEST(grabacionValidaTEST, MicrofonoNoFunciona){
     int freq = 4;
     int prof = 16;
 
-    audio a = {0,0,0,0,0,0,0,0,0,0,1,2,3,4};
+               audio a = {0,0,0,0,0,0,0,0,0,0,1,2,3,4};
     EXPECT_EQ(false, grabacionValida(a,prof,freq));
 }
 
+TEST(grabacionValidaTEST, UnSoloSilDeMas1Seg) {
+    int freq = 4;
+    int prof = 16;
+    audio a = {4,2,6,3,0,0,0,0,5,2,0,0,0,0,0,6};
+    EXPECT_EQ(false, grabacionValida(a,prof,freq));
+}
+
+TEST(grabacionValidaTEST, VariosSilDe1Seg) {
+    int freq = 4;
+    int prof = 16;
+    audio a = {4,2,6,3,0,0,0,0,5,0,0,0,0,2,0,0,0,0,6};
+    EXPECT_EQ(true, grabacionValida(a,prof,freq));
+}
+
+TEST(grabacionValidaTEST, VarioSSilDeMas1Seg) {
+    int freq = 4;
+    int prof = 16;
+    audio a = {4,2,6,3,0,0,0,0,5,2,0,0,0,0,0,6};
+    EXPECT_EQ(false, grabacionValida(a,prof,freq));
+}
+
+TEST(grabacionValidaTEST, SilAlFinal1Seg) {
+    int freq = 4;
+    int prof = 16;
+    audio a = {4,2,6,3,0,0,0,0,5,2,0,0,0,0};
+    EXPECT_EQ(true, grabacionValida(a,prof,freq));
+}
+
+TEST(grabacionValidaTEST, SilAlFinalMas1Seg) {
+    int freq = 4;
+    int prof = 16;
+    audio a = {4,2,6,3,0,0,0,0,5,2,0,0,0,0,0};
+    EXPECT_EQ(false, grabacionValida(a,prof,freq));
+}
+
+TEST(grabacionValidaTEST, UnSoloSilDe1Seg) {
+    int freq = 4;
+    int prof = 16;
+    audio a = {4,2,6,3,0,0,0,0,5,2,0,0,0,0,6};
+    EXPECT_EQ(true, grabacionValida(a,prof,freq));
+}

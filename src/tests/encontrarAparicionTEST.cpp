@@ -1,4 +1,4 @@
-#include "../Funciones_TPI.h"
+/*#include "../Funciones_TPI.h"
 #include "../ejercicios.h"
 
 #include "gtest/gtest.h"
@@ -26,3 +26,4 @@ TEST(encontrarAparicionTEST, encontrarAparicion) {
     int posMxCrr = encontrarAparicion(subAudio(speaker,startPOINT,endPOINT),frase);
     EXPECT_EQ(3854,posMxCrr);
 }
+*/

@@ -37,21 +37,26 @@ bool enRango(audio s, int prof) {
     return enRango;
 }
 
+
 bool micFunciona(audio s, int freq) {
     int i = 0;
     bool funciona = true;
-
+    while(i < s.size() - freq){
+        if(sonTodosCeros(subseq(s,i,i+freq+1))) {
+            funciona = false;
+            break;
+        }
+        i++;
+    }
+/*
     while(i < s.size()) {
         int j = i+freq;
-
         if(sonTodosCeros(subseq(s,i,j))) {
             funciona = false;
             break;
         }
-
         i++;
-    }
-
+    }*/
     return funciona;
 }
 
