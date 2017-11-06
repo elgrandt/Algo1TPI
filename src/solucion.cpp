@@ -293,7 +293,7 @@ lista_intervalos leerIntervalosDeHabla(int locutor){
     while (!lector.eof()) {
         intervalo act;
         lector >> get<0>(act) >> get<1>(act);
-        if (!(get<0>(act) == 0 && get<1>(act))) { // Verificacion por ultima linea en blanco
+        if (!(get<0>(act) == 0 && get<1>(act) == 0)) { // Verificacion por ultima linea en blanco
             intervalos.push_back(act);
         }
     }
@@ -324,8 +324,10 @@ float compararSilencios(audio vec, int freq, int prof, int locutor, int umbralSi
             }
         }
     }
-    float precision = float(vp)/(vp+fp), recall = float(vp)/(vp+fn);
-    float F1 = 2* ((precision*recall) / (precision+recall));
+    float precision = vp+fp > 0 ? float(vp)/(vp+fp) : 0;
+    float recall = vp+fn > 0 ? float(vp)/(vp+fn) : 0;
+    //cout << vp << ", " << fp << ", " << vn << ", " << fn << endl;
+    float F1 = precision+recall > 0 ? 2* ((precision*recall) / (precision+recall)) : 0;
     return F1;
 }
 
@@ -333,27 +335,29 @@ float resultadoFinal(sala m, int freq, int prof, int umbralSilencio){
     float suma = 0;
     for (int x = 0; x < m.size(); x++){
         float act = compararSilencios(m[x],freq,prof,x,umbralSilencio);
+        //cout << act << ", " << x << ", " << umbralSilencio << endl;
         suma += act;
     }
     return suma / m.size();
 }
 
-/*int encontrarMejorUmbralFuerzaBruta(sala m, int freq, int prof){
+int encontrarMejorUmbralFuerzaBruta(sala m, int freq, int prof){
     int maximo = 0;
     for (int x = 0; x < m.size(); x++){
         maximo = max(maximo, *max_element(begin(m[x]), end(m[x])));
     }
+    cout << maximo << endl;
     pair<int,float> mejorUmbral = {-1,0}; // Actual mejor, Puntaje del actual mejor
-    for (int x = 1; x < maximo; x++){
-        cout << x << endl;
+    for (int x = 0; x <= maximo; x += maximo/10){
         float act = resultadoFinal(m, freq, prof, x);
         if (mejorUmbral.first == -1 || mejorUmbral.second < act){
             mejorUmbral.first = x;
             mejorUmbral.second = act;
         }
+        cout << "Umbral: " << x << " F1: " << act << endl;
     }
-    cout << mejorUmbral.first << ", " << mejorUmbral.second << endl;
-}*/
+    cout << "Mejor umbral: "<< mejorUmbral.first << " con F1: " << mejorUmbral.second << endl;
+}
 
 /************************** EJERCICIO sinSilencios **************************/
 
