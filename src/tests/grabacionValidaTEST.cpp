@@ -65,6 +65,7 @@ TEST(grabacionValidaTEST, SilAlFinal1Seg) {
     EXPECT_EQ(true, grabacionValida(a,prof,freq));
 }
 
+
 TEST(grabacionValidaTEST, SilAlFinalMas1Seg) {
     int freq = 4;
     int prof = 16;

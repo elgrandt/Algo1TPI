@@ -1,4 +1,4 @@
-/*#include "../Funciones_TPI.h"
+#include "../Funciones_TPI.h"
 #include "../ejercicios.h"
 
 #include "gtest/gtest.h"
@@ -21,10 +21,9 @@ TEST(mejorUmbralTEST, testUMBRAL) {
 }
 
 /*
-
 TEST(mejorUmbralTEST, testSILENCIOS) {
     int frecuencia, profundidad,duracion;
-    liprofsta_distancias dst_spk;
+    //liprofsta_distancias dst_spk;
     vector<string> lista_archivos = {"datos/spkr0.dat",
                                      "datos/spkr1.dat",
                                      "datos/spkr2.dat",
